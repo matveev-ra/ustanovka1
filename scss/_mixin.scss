@@ -1,0 +1,97 @@
+@mixin fontN($fz,$lh) {
+  font-weight: normal;
+  font-size: $fz;
+  line-height: $lh;
+}
+@mixin font400($fz,$lh) {
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+}
+@mixin font500($fz,$lh) {
+  font-weight: 500;
+  font-size: $fz;
+  line-height: $lh;
+}
+@mixin fontB($fz,$lh) {
+  font-weight: bold;
+  font-size: $fz;
+  line-height: $lh;
+}
+@mixin font600($fz,$lh) {
+  font-weight: 600;
+  font-size: $fz;
+  line-height: $lh;
+}
+@mixin font700($fz,$lh) {
+  font-weight: 700;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+
+
+// .flexC {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -ms-flex-wrap: wrap;
+//   flex-wrap: wrap;
+//   -webkit-box-pack: justify;
+//   -ms-flex-pack: justify;
+//   justify-content: center;
+// }
+
+// .flexB {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -ms-flex-wrap: wrap;
+//   flex-wrap: wrap;
+//   -webkit-box-pack: justify;
+//   -ms-flex-pack: justify;
+//   justify-content: space-between;
+// }
+
+// .flexA {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -ms-flex-wrap: wrap;
+//   flex-wrap: wrap;
+//   -webkit-box-pack: justify;
+//   -ms-flex-pack: justify;
+//   justify-content: space-around;
+// }
+
+// .Fct {
+//   display: flex;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   justify-content: center;
+//   -webkit-box-pack: justify;
+//   -webkit-justify-content: center;
+//   -ms-flex-pack: justify;
+//   align-items: center;
+//   -webkit-box-align: center;
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+// }
+
+// .Fct2 {
+//   display: flex;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   flex-direction: column;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   -ms-flex-direction: column;
+//   justify-content: center;
+//   -webkit-box-pack: justify;
+//   -webkit-justify-content: center;
+//   -ms-flex-pack: justify;
+//   align-items: center;
+//   -webkit-box-align: center;
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+// }
