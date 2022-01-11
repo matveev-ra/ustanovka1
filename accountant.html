@@ -3,7 +3,7 @@
 <html lang="ru">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Задача</title>
+	<title>Бухгалтер</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="Keywords" content=""/>
 	<meta name="Description" content=""/>
@@ -114,122 +114,186 @@
         <a href="">Сети связи</a>  /  <a href="">Монтаж локальных сетей связи (СКС)</a>  /  <span>Название задачи</span>
       </div>
 
-      <div class="HDmain">Название задачи</div>
+      <div class="HDmain">Бухгалтер</div>
 
-      <div class="TaskM__wrap">
-        
-        <div class="TaskM">
-          <div class="TaskM__top">
-            <div class="Media__item open">
-              <i class="Media__icon"></i>
-              <span>Открыто</span>
+      <div class="Account">
+        <div class="Account-head">
+          <div class="Account-head__top"> Выплаты </div>
+          <div class="Account-head__wrap">
+            <div class="Field">
+              <input type="text" name="seria" placeholder="№ платежа" value="">
             </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-time"></i>
-              <span >1 день назад</span>
+            <div class="Field">
+              <input type="text" name="seria" placeholder="№ задачи" value="">
             </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-map"></i>
-              <span>Екатеренбург</span>
+            <div class="Field">
+              <select class="select2" >
+                <option selected disabled >Статус</option>
+                <option value="Опалчено">Опалчено</option>
+                <option value="Отклонено">Отклонено</option>
+              </select>    
             </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-message"></i>
-              <span>1 отлик</span>
+            <div class="Field">
+              <select class="select2" >
+                <option selected disabled >Тип</option>
+                <option value="Опалчено">Опалчено</option>
+                <option value="Отклонено">Отклонено</option>
+              </select>    
             </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-see"></i>
-              <span>12</span>
+
+            <div class="Field Field-data">
+              <span>от</span>
+              <input type="date" name="date" placeholder="Дата"  value="">
+            </div>
+
+            <div class="Field Field-data">
+              <span>до</span>
+              <input type="date" name="date" placeholder="Дата"  value="">
             </div>
           </div>
-          <div class="TaskM__body">
-            <div class="TaskM__budget">
-              По договоренности
-              <span>Бюджет</span>
+          <div class="Account-head__wrap2">
+            <div class="Field">
+              <select class="select2" >
+                <option value="Исполнитель">Исполнитель</option>
+                <option value="Заказчик">Заказчик</option>
+              </select>    
             </div>
-            <div class="TaskM__time">Начать задание: <span>18.10.2021 04:00</span> </div>
-            <div class="TaskM__desc">
-              <div class="HD">Описание проекта:</div>
-              <div class="Text">
-                Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... 
-              </div>
-            </div>
-
-            <div class="TaskM-img">
-              <div class="TaskM-img__Hd">Прикрепленные файлы:</div>
-              <div class="TaskM-img__Wrap">
-                <div class="TaskM-img__item">
-                  <img src="images/img-pasport.png" alt="">
-                </div>
-                <div class="TaskM-img__item">
-                  <img src="images/img-pasport.png" alt="">
-                </div>
-                <div class="TaskM-img__item">
-                  <img src="images/img-pasport.png" alt="">
-                </div>
-                <div class="TaskM-img__item">
-                  <img src="images/img-pasport.png" alt="">
-                </div>
-                <div class="TaskM-img__item">
-                  <img src="images/img-pasport.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="AddOffer">
-              <button class="btn-form bpopup2" data-name="ModalAddOffer" >Предложить услуги</button>
-            </div>
-          </div>
-        </div> 
-        <!-- /TaskM-->
-
-      </div>
-    </div>
-    <!-- /Content-->
-
-    <div class="SideBarR">
-      <div class="SideBarR__Left">
-        <div class="Task__user">
-        
-          <div class="Task__infouser">
-            <div class="Task__avatar">
-              <img src="images/avatar-mini.png" alt="">
-              <div class="off online"></div>
-            </div>
-            <div class="Task__user-in">
-              <div class="Task__nameuser">Олег Констано...</div>
-              <div class="Task__stars">
-                <img src="images/icon-star-full.svg" alt="">
-                <img src="images/icon-star.svg" alt="">
-                <img src="images/icon-star.svg" alt="">
-                <img src="images/icon-star.svg" alt="">
-                <img src="images/icon-star.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <!-- /Task__infouser-->
-          <div class="Task__rating">
-            <div class="Task__like">
-              <i class="Task__like-icon"></i>
-              <span>345</span>
-            </div>
-            <div class="Task__dislike">
-              <i class="Task__dislike-icon"></i>
-              <span>345</span>
-            </div>
+            <div class="btn-form">Показать</div>
           </div>
         </div>
-        <!-- /Task__user-->
-        <div class="Task__UContact">
-          <p>Телефон: +7 (933) 982-92-82</p>
-          <p>E-mail: manager@ya.ru</p>
+        <div class="Account-body">
+          <div class="TablBalance">
+            <div class="TablBalance__thead">
+              <div class="TablBalance__th">№ пл.</div>
+              <div class="TablBalance__th">№</div>
+              <div class="TablBalance__th">Название</div>
+              <div class="TablBalance__th">Бюджет</div>
+              <div class="TablBalance__th">Тип<br/> платежа</div>
+              <div class="TablBalance__th">Начислено</div>
+              <div class="TablBalance__th">Выплачено</div>
+              <div class="TablBalance__th">Статус</div>
+            </div>
+            <div class="TablBalance__tbody">
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-red2">Отклонена</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-orange">В работе</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-plus">В работе</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-red2">Отклонена</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-orange">В работе</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-plus">В работе</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-red2">Отклонена</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-orange">В работе</span></div>
+              </div>
+              <div class="TablBalance__tr">
+                <div class="TablBalance__td">235</div>
+                <div class="TablBalance__td">6568</div>
+                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
+                <div class="TablBalance__td">100 000</div>
+                <div class="TablBalance__td">Окончательный платеж</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
+                <div class="TablBalance__td"><span class="check-plus">В работе</span></div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="NavPanel">
+            <div class="Pagenav">
+              <ul>
+                <li><a href="">1</a></li>
+                <li class="active"><span>2</span></li>
+                <li><a href="">3</a></li>
+              </ul>
+            </div>
+  
+            <div class="Pagelist">
+              <select   class="select2" style="width: 230px;">
+                <option value="10">Показывать по 10 заданий</option>
+                <option value="20">Показывать по 20 заданий</option>
+                <option value="30">Показывать по 30 заданий</option>
+                <option value="40">Показывать по 40 заданий</option>
+                <option value="50">Показывать по 50 заданий</option>
+              </select>
+            </div>
+  
+          </div>
         </div>
-      </div>
-
-      <div class="Task__map">
-        <img src="images/map.png" alt="">
       </div>
       
     </div>
-    <!-- /SideBarR-->
+    <!-- /Content-->
+
+    
 
   </div>
   <!-- /ContWrap-->

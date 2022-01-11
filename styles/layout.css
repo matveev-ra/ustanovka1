@@ -3710,6 +3710,110 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-right: 15px;
 }
 
+.Account-head {
+  border: 1px solid #E9E9E9;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+.Account-head__top {
+  border-bottom: 1px solid #E9E9E9;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222;
+}
+
+.Account-head__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.Account-head__wrap .Field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 97px;
+  flex: 0 0 97px;
+}
+
+.Account-head__wrap .Field input {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.Account-head__wrap .Field-data {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 140px;
+  flex: 0 0 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.Account-head__wrap .Field-data input {
+  width: 120px;
+}
+
+.Account-head .select2 {
+  width: 100% !important;
+}
+
+.Account-head__wrap2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.Account-head__wrap2 .Field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  min-width: 150px;
+}
+
+.Account-head__wrap2 .btn-form {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin: 0 3px 0 0;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {

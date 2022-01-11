@@ -3538,6 +3538,80 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
+.Account { }
+
+.Account-head {
+  border: 1px solid #E9E9E9;
+  border-radius: 7px;
+  margin-bottom: 50px;
+
+		&__top {
+      border-bottom: 1px solid #E9E9E9;
+      padding: 15px;
+      @include font600(14px,17px);
+      color: #222;
+    }
+
+		&__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      gap: 15px;
+
+      .Field {
+        // width: 12%;
+        flex:0 0 97px; 
+        input {
+          padding-left: 10px;
+          @include font400(14px,17px);
+        }
+      }
+
+      .Field-data {
+        flex:0 0 140px; 
+        // width: 140px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        input {
+          width: 120px;
+        }
+      }
+      
+      
+    }
+    .select2 {
+        width: 100% !important;
+      }
+    &__wrap2 {
+       display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        padding: 15px;
+        gap: 15px;
+
+        .Field {
+          flex: 0 0 35%;
+          min-width: 150px;
+           
+        }
+        .btn-form {
+          flex: 0 0 15%;
+          text-align: center;
+          justify-content: center;
+        }
+    }
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin: 0 3px 0 0 ;
+}
 
 
 
