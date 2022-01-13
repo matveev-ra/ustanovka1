@@ -1658,6 +1658,13 @@ footer .Cont900 {
   flex: 0 0 13px;
 }
 
+.check-orange a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+}
+
 .check-plus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3814,6 +3821,186 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0 3px 0 0;
 }
 
+.TablAccount {
+  margin-bottom: 30px;
+  overflow: auto;
+  width: 100%;
+}
+
+.TablAccount .thead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  background: #848484;
+  padding: 5px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.TablAccount .th {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #848484;
+}
+
+.TablAccount .th:nth-child(1),
+.TablAccount .td:nth-child(1) {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 7%;
+  flex: 1 1 7%;
+}
+
+.TablAccount .th:nth-child(2),
+.TablAccount .td:nth-child(2) {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 7%;
+  flex: 1 1 7%;
+}
+
+.TablAccount .th:nth-child(3),
+.TablAccount .td:nth-child(3) {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 22%;
+  flex: 1 1 22%;
+}
+
+.TablAccount .th:nth-child(4),
+.TablAccount .td:nth-child(4) {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 10%;
+  flex: 1 1 10%;
+}
+
+.TablAccount .th:nth-child(5),
+.TablAccount .td:nth-child(5) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+}
+
+.TablAccount .th:nth-child(6),
+.TablAccount .td:nth-child(6) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 110px;
+  flex: 0 0 110px;
+}
+
+.TablAccount .th:nth-child(7),
+.TablAccount .td:nth-child(7) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75px;
+  flex: 0 0 75px;
+}
+
+.TablAccount .th:nth-child(8),
+.TablAccount .td:nth-child(8) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75px;
+  flex: 0 0 75px;
+}
+
+.TablAccount .th:nth-child(9),
+.TablAccount .td:nth-child(9) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 90px;
+  flex: 0 0 90px;
+}
+
+.TablAccount .td:nth-child(1) {
+  background: #fff;
+}
+
+.TablAccount .tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  gap: 5px;
+}
+
+.TablAccount .tr:nth-child(2n+1) {
+  background: #F9F9F9;
+}
+
+.TablAccount .tr:nth-child(2n+1) .td:nth-child(1) {
+  background: #F9F9F9;
+}
+
+.TablAccount .td {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #494949;
+  padding: 5px 0;
+}
+
+.TablAccount .td:nth-child(3) {
+  text-align: left;
+}
+
+.TablAccount .td:nth-child(3) a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #17A1AA;
+  text-decoration: none;
+}
+
+.TablAccount .td:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+
+.TablAccount .td:nth-child(7) span,
+.TablAccount .td:nth-child(8) span {
+  font-weight: bold;
+  display: block;
+}
+
+.stickyTablFix .thead .th {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 95;
+}
+
+.stickyTablFix .thead .th:nth-child(1) {
+  left: 0;
+  z-index: 99;
+}
+
+.stickyTablFix .tbody .td:nth-child(1) {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  z-index: 98;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {
@@ -3925,6 +4112,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
+  }
+
+  .TablAccount .thead {
+    min-width: 755px;
+  }
+
+  .TablAccount .th {
+    font-size: 11px;
+  }
+
+  .TablAccount .tbody {
+    min-width: 755px;
   }
 }
 
@@ -4285,6 +4484,42 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+
+  .TablAccount .thead {
+    width: 820px;
+  }
+
+  .TablAccount .th:nth-child(1),
+  .TablAccount .td:nth-child(1) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 43px;
+    flex: 0 0 43px;
+  }
+
+  .TablAccount .th:nth-child(2),
+  .TablAccount .td:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 43px;
+    flex: 0 0 43px;
+  }
+
+  .TablAccount .th:nth-child(3),
+  .TablAccount .td:nth-child(3) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 160px;
+    flex: 0 0 160px;
+  }
+
+  .TablAccount .th:nth-child(4),
+  .TablAccount .td:nth-child(4) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 76px;
+    flex: 0 0 76px;
+  }
+
+  .TablAccount .tbody {
+    width: 820px;
   }
 }
 

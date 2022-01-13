@@ -109,7 +109,7 @@
     </div>
     <!-- /SideBar-->
     
-    <div class="Content">
+    <div class="Content ContBalance">
       <div class="BreadCrambs">
         <a href="">Сети связи</a>  /  <a href="">Монтаж локальных сетей связи (СКС)</a>  /  <span>Название задачи</span>
       </div>
@@ -162,108 +162,86 @@
           </div>
         </div>
         <div class="Account-body">
-          <div class="TablBalance">
-            <div class="TablBalance__thead">
-              <div class="TablBalance__th">№ пл.</div>
-              <div class="TablBalance__th">№</div>
-              <div class="TablBalance__th">Название</div>
-              <div class="TablBalance__th">Бюджет</div>
-              <div class="TablBalance__th">Тип<br/> платежа</div>
-              <div class="TablBalance__th">Начислено</div>
-              <div class="TablBalance__th">Выплачено</div>
-              <div class="TablBalance__th">Статус</div>
+          <div class="TablAccount stickyTablFix">
+            <div class="thead">
+              <div class="th">№ пл.</div>
+              <div class="th">№</div>
+              <div class="th">Название</div>
+              <div class="th">Бюджет</div>
+              <div class="th">Тип<br/> платежа</div>
+              <div class="th">Исполнитель</div> 
+              <div class="th">Начислено</div> 
+              <div class="th">Выплачено</div>
+              <div class="th">Статус</div>
             </div>
-            <div class="TablBalance__tbody">
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-red2">Отклонена</span></div>
+            <div class="tbody">
+              <div class="tr">
+                <div class="td">235</div>
+                <div class="td">6568</div>
+                <div class="td"><a href="">Рефлектограммы</a></div>
+                <div class="td">100 000</div>
+                <div class="td">Окончательный платеж</div>
+                <div class="td">Иванов Василий Александрович</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span class="check-red2">Отклонена</span></div>
               </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-orange">В работе</span></div>
+              <div class="tr">
+                <div class="td">235</div>
+                <div class="td">6568</div>
+                <div class="td"><a href="">Рефлектограммы</a></div>
+                <div class="td">100 000</div>
+                <div class="td">Окончательный платеж</div>
+                <div class="td">Иванов Василий Александрович</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span class="check-orange bpopup2" data-name="CheckPay">Новая<a href=""><img src="images/icon-rub.svg" alt=""></a></span> </div>
               </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-plus">В работе</span></div>
+              <div class="tr">
+                <div class="td">235</div>
+                <div class="td">6568</div>
+                <div class="td"><a href="">Рефлектограммы</a></div>
+                <div class="td">100 000</div>
+                <div class="td">Окончательный платеж</div>
+                <div class="td">Иванов Василий Александрович</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span class="check-plus">Оплачено</span></div>
               </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-red2">Отклонена</span></div>
+              <div class="tr">
+                <div class="td">235</div>
+                <div class="td">6568</div>
+                <div class="td"><a href="">Рефлектограммы</a></div>
+                <div class="td">100 000</div>
+                <div class="td">Окончательный платеж</div>
+                <div class="td">Иванов Василий Александрович</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span class="check-red2">Отклонена</span></div>
               </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-orange">В работе</span></div>
+              <div class="tr">
+                <div class="td">235</div>
+                <div class="td">6568</div>
+                <div class="td"><a href="">Рефлектограммы</a></div>
+                <div class="td">100 000</div>
+                <div class="td">Окончательный платеж</div>
+                <div class="td">Иванов Василий Александрович</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span class="check-orange bpopup2" data-name="CheckPay">Новая<a href=""><img src="images/icon-rub.svg" alt=""></a></span> </div>
               </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-plus">В работе</span></div>
+              <div class="tr">
+                <div class="td">235</div>
+                <div class="td">6568</div>
+                <div class="td"><a href="">Рефлектограммы</a></div>
+                <div class="td">100 000</div>
+                <div class="td">Окончательный платеж</div>
+                <div class="td">Иванов Василий Александрович</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span>100</span> 15.08.2021</div>
+                <div class="td"><span class="check-plus">Оплачено</span></div>
               </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-red2">Отклонена</span></div>
-              </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-orange">В работе</span></div>
-              </div>
-              <div class="TablBalance__tr">
-                <div class="TablBalance__td">235</div>
-                <div class="TablBalance__td">6568</div>
-                <div class="TablBalance__td"><a href="">Рефлектограммы</a></div>
-                <div class="TablBalance__td">100 000</div>
-                <div class="TablBalance__td">Окончательный платеж</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span>100</span> 15.08.2021</div>
-                <div class="TablBalance__td"><span class="check-plus">В работе</span></div>
-              </div>
+             
               
             </div>
           </div>
@@ -325,11 +303,12 @@
 
 
 <!--MODAL //////////////////  - форма  ////////////////////-->
-<div class="ModalF " id="ModalAddOffer" style=" display: none;">
+<div class="ModalF " id="CheckPay" style=" display: none;">
   <div class="close"></div>
 
   <div class="Modal__body">
-    <div class="Modal__hd">Добавить предложениек заданию</div>
+    <div class="Modal__hd">Начисление по задаче 2023</div>
+
     <div class="TextArea">
       <textarea  name="" id=""></textarea>
     </div>
