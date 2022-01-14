@@ -195,7 +195,7 @@
                 <div class="td">Иванов Василий Александрович</div>
                 <div class="td"><span>100</span> 15.08.2021</div>
                 <div class="td"><span>100</span> 15.08.2021</div>
-                <div class="td"><span class="check-orange bpopup2" data-name="CheckPay">Новая<a href=""><img src="images/icon-rub.svg" alt=""></a></span> </div>
+                <div class="td"><span class="check-orange bpopup3" data-name="CheckPay">Новая<a href=""><img src="images/icon-rub.svg" alt=""></a></span> </div>
               </div>
               <div class="tr">
                 <div class="td">235</div>
@@ -228,7 +228,7 @@
                 <div class="td">Иванов Василий Александрович</div>
                 <div class="td"><span>100</span> 15.08.2021</div>
                 <div class="td"><span>100</span> 15.08.2021</div>
-                <div class="td"><span class="check-orange bpopup2" data-name="CheckPay">Новая<a href=""><img src="images/icon-rub.svg" alt=""></a></span> </div>
+                <div class="td"><span class="check-orange bpopup3" data-name="CheckPay">Новая<a href=""><img src="images/icon-rub.svg" alt=""></a></span> </div>
               </div>
               <div class="tr">
                 <div class="td">235</div>
@@ -304,21 +304,61 @@
 
 <!--MODAL //////////////////  - форма  ////////////////////-->
 <div class="ModalF " id="CheckPay" style=" display: none;">
-  <div class="close"></div>
+  <div class="close closeModal"></div>
 
   <div class="Modal__body">
-    <div class="Modal__hd">Начисление по задаче 2023</div>
+    <div class="Modal__hd hd2">Начисление по задаче 2023</div>
+    <form action="">
+      <div class="form_fields">
+        <div class="Field">
+          <input type="date" id="datapay" name="date" placeholder="Дата"  value="">
+        </div>
+        <div class="Field">
+          <input type="text" name="date" placeholder="Сумма"  value="">
+        </div>
+      </div>
+      <div class="TextArea TextArea2">
+        <textarea name="" id="" placeholder="Коментрий" ></textarea>
+      </div>
+      <div class="button-cont">
+        <button  type="submit" name="submit" id="btnpay" class="btn-form">Оплатить</button>
+        <button  id="btnback" class="btn-form red">Отказать</button>
+        <button  id="" class="btn-form orange closeModal">Закрыть</button>
+      </div>
 
-    <div class="TextArea">
-      <textarea  name="" id=""></textarea>
-    </div>
+    </form>
+    
   </div>
-  <button type="submit" value="" name="submit" id="submit" class="btn-footform">Отправить заявку</button>
+  
 
 </div>
 <!-- /MODAL //////////////////////////////////////////////-->
 
+<!--MODAL //////////////////  - Modal   ////////////////////-->
+<div class="ModalF " id="NoDate" style=" display: none;">
+  <div class="close closeModal"></div>
+  <div class="Modal__body">
+    <div class="Modal__hd">Вы забыли указать дату!</div>
+    <div class="Modal__btn">
+      <button class="btn-form closeModal">Ok</button>
+      
+    </div>
+  </div>
+</div>
+<!-- /MODAL //////////////////////////////////////////////-->
 
+<!--MODAL //////////////////  - Modal   ////////////////////-->
+<div class="ModalF " id="MoneyBack" style=" display: none;">
+  <div class="close closeModal"></div>
+  <div class="Modal__body">
+    <div class="Modal__hd">Вы уверены, что нужно отменить начисление?</div>
+    <div class="Modal__btn">
+      <button class="btn-form ">Ok</button>
+      <button class="btn-form grey closeModal">Отмена</button>
+    </div>
+  </div>
+</div>
+<!-- /MODAL //////////////////////////////////////////////-->
 
 
 <script src="js/jquery-3.6.0.min.js"></script>

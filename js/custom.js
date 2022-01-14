@@ -339,14 +339,7 @@ $(document).ready(function () {
             $('#save_ppassword').attr("disabled","disabled");
         }
      });
-
-    
-
-   
- 
-
-
-    
+     
 
 });// end - $(document).ready(function () {
 
@@ -392,6 +385,8 @@ $(function() {
     });		
     
 });
+
+
 // работа вкладок в режиме select - замена названия активной вкладки
 $('.ListTab__tab').on('click', function(e){
     if($('.ListTab__head').hasClass('active') && $('body').hasClass('body_pointer') ){
@@ -417,13 +412,6 @@ $('.ProfTab__tab').on('click', function(e){
     } 
     
 });
-
-
-
-
-
-
-
 
 
 // изменения класс в зависемости от ширины экрана
@@ -458,7 +446,21 @@ $('.bpopup2').click(function(e) {
     var idmodal = '#' + href;
     $(idmodal).bPopup({
         follow: [ true , false ], // x, y 
-            closeClass:'close'
+            closeClass:'close, closeModal'
+            
+
+        });
+});
+
+$('.bpopup3').click(function(e) {
+    e.preventDefault();
+    var href = $(this).data('name');
+    var idmodal = '#' + href;
+    $(idmodal).bPopup({
+        follow: [ true , false ], // x, y 
+            closeClass:'closeModal'
+            
+
         });
 });
 
@@ -471,26 +473,58 @@ $('.bpopup2').click(function(e) {
        
     // });
 
-
     // $('#regions a').click(function (e) {
     //     e.preventDefault();
     //     var list = $('#cities-regions');
     //     list.closest('.City__body').addClass('active').siblings().removeClass('active');
     // });
 
-    $('#regions a').click(function (e) {
-        e.preventDefault();
-        $('#popup-location-city').bPopup({
-            follow: [ true , true ], // x, y 
-                closeClass:'close-back'
-            });
+$('#regions a').click(function (e) {
+    e.preventDefault();
+    $('#popup-location-city').bPopup({
+        follow: [ true , true ], // x, y 
+            closeClass:'close-back'
+        });
+});
+
+$('.close5').click(function() { 
+    $('#Cooke').hide();
+    
+});
+
+// var input = $('input#datapay');
+// $('form').on('change', function(){
+//    if(input.val().length) {
+//       // поле заполнено
+//    } else {
+//      // поле не заполнено;
+//   }
+// });
+
+$('#btnpay').click(function(e) { 
+    var input = $('input#datapay');
+    if(input.val().length) {
+
+     } else {
+         e.preventDefault();
+        $('#NoDate').bPopup({
+            follow: [ true , false ], // x, y 
+            closeClass:'closeModal'
+        });
+    }
+});
+
+
+//отказать в оплате
+$("#btnback").click(function(e){
+    // поле не заполнено;
+    e.preventDefault();
+    $('#MoneyBack').bPopup({
+        follow: [ true , false ], // x, y 
+        closeClass:'closeModal'
     });
-
-    $('.close5').click(function() { 
-        $('#Cooke').hide();
-       
-   });
-
+ 
+});
 
 
 });

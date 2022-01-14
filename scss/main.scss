@@ -1167,6 +1167,9 @@ footer {
     color: #2C2C2C;
     text-align: center;
     margin-bottom: 10px;
+    &.hd2 {
+      margin-bottom: 30px;
+    }
   }
 
   &__desc {
@@ -2266,6 +2269,22 @@ footer {
       background: #afaeae;
     }
   }
+  &.red  {
+    background: #E72424;
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      background: #EE6565;
+    }
+
+    &:active {
+      background: #AF0909;
+    }
+
+    &:focus {
+      background: #AF0909;
+    }
+  }
 }
 
 .btn-small {
@@ -2806,6 +2825,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       background: #fff;
     }
   }
+  &.TextArea2 {
+    margin-bottom: 30px;
+  } 
 }
 
 .AddOffer {
@@ -3751,8 +3773,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   z-index: 98;
 }
+.form_fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 26px;
 
-
+  .Field {
+    width: 45%;
+  }
+}
+.button-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 
 
