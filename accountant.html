@@ -76,26 +76,15 @@
       </div>
 
       <div class="Panel">
+        
         <div class="Panel__item">
-          <a href="" >
-            <i class="Panel__icon "><img src="images/icon-balance.svg" alt="" class="img-svg"></i>
-            <span class="Panel__name">Баланс</span>
-            <span class="Panel__summa">600р</span>
-          </a>
-        </div>
-        <div class="Panel__item">
-          <a href="" class="">
+          <a href="" class="active">
             <i class="Panel__icon "><img src="images/icon-notific.svg" alt="" class="img-svg"></i>
             <span class="Panel__name">Уведомления</span>
             <span class="Panel__num-notific">12</span>
           </a>
         </div>
-        <div class="Panel__item">
-          <a href="">
-            <i class="Panel__icon "><img src="images/icon-task.svg" alt="" class="img-svg"></i>
-            <span class="Panel__name Panel__name-task">Задания</span>
-          </a>
-        </div>
+        
       </div>
       <!-- /Panel-->
 
@@ -129,26 +118,27 @@
             <div class="Field">
               <select class="select2" >
                 <option selected disabled >Статус</option>
-                <option value="Опалчено">Опалчено</option>
-                <option value="Отклонено">Отклонено</option>
+                <option value="Отклоненные ">Новая</option>
+                <option value="Оплаченные">Оплаченные</option>
               </select>    
             </div>
             <div class="Field">
               <select class="select2" >
                 <option selected disabled >Тип</option>
-                <option value="Опалчено">Опалчено</option>
-                <option value="Отклонено">Отклонено</option>
+                <option value="Аванс">Аванс</option>
+                <option value="Накладные расходы">Накладные расходы</option>
+                <option value="Окончательный платеж">Окончательный платеж</option>
               </select>    
             </div>
-
+            
             <div class="Field Field-data">
               <span>от</span>
-              <input type="date" name="date" placeholder="Дата"  value="">
+              <input type="text" name="date2" placeholder="Дата"  value="" class="inputdate">
             </div>
 
             <div class="Field Field-data">
               <span>до</span>
-              <input type="date" name="date" placeholder="Дата"  value="">
+              <input type="text" name="date2" placeholder="Дата"  value="" class="inputdate">
             </div>
           </div>
           <div class="Account-head__wrap2">
@@ -311,7 +301,7 @@
     <form action="">
       <div class="form_fields">
         <div class="Field">
-          <input type="date" id="datapay" name="date" placeholder="Дата"  value="">
+          <input type="text" id="datapay" name="date" placeholder="Дата"  value="" class="inputdate">
         </div>
         <div class="Field">
           <input type="text" name="date" placeholder="Сумма"  value="">
