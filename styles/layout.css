@@ -3809,10 +3809,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 120px;
 }
 
-.Account-head .select2-container {
-  width: 100% !important;
-}
-
 .Account-head__wrap2 {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -266,7 +266,9 @@ $(document).ready(function () {
        
    //подключение плагина select2 lkz select полей  
    $(".select2").select2({
-         minimumResultsForSearch: Infinity
+         minimumResultsForSearch: Infinity,
+         width : 'resolve' 
+         
     });
 
 
