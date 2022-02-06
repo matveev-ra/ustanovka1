@@ -512,5 +512,18 @@ $("#btnback").click(function(e){
  
 });
 
+// $('#plus').click(clickPrev);  
+//      function clickPrev(){
+//         preventDefault();
+//       $('#input__file').trigger('click');
+//       };
+
+      $("#plus").click(function(e){
+        // поле не заполнено;
+        e.preventDefault();
+        $('#input__file').trigger('click');
+     
+    });
+
 
 });

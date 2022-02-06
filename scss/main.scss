@@ -3811,7 +3811,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-
+#input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute; 
+  width: 10px;
+}
 
 
 

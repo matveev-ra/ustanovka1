@@ -4065,6 +4065,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: space-between;
 }
 
+#input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 10px;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {
