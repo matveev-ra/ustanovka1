@@ -512,6 +512,23 @@ $("#btnback").click(function(e){
  
 });
 
+//Modal menu
+$(".Link-menu").click(function(e){
+
+    $('#MoadalMenu').bPopup({
+        positionStyle: 'fixed' ,
+        closeClass:'close'
+    });
+ 
+});
+$(".delete-js").click(function(e){
+
+    $('#ModalDelete').bPopup({
+        positionStyle: 'fixed' ,
+        closeClass:'close'
+    });
+ 
+});
 // $('#plus').click(clickPrev);  
 //      function clickPrev(){
 //         preventDefault();

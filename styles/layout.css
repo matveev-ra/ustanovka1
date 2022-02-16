@@ -1043,6 +1043,10 @@ footer .Cont900 {
   width: 380px;
 }
 
+.ModalMenu {
+  width: 310px;
+}
+
 .ModalCity {
   max-width: 1024px;
   width: 95%;
@@ -1574,8 +1578,23 @@ footer .Cont900 {
   text-decoration: none;
 }
 
+.TablTask__td:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
 .TablTask__td:nth-child(4) {
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .check-red {
@@ -1592,6 +1611,9 @@ footer .Cont900 {
   align-items: center;
   color: #E72424;
   line-height: 14px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .check-red::before {
@@ -1620,6 +1642,9 @@ footer .Cont900 {
   align-items: center;
   color: #E72424;
   line-height: 14px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .check-red2::before {
@@ -1648,6 +1673,9 @@ footer .Cont900 {
   align-items: center;
   color: #EE8F00;
   line-height: 14px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .check-orange::before {
@@ -1683,6 +1711,9 @@ footer .Cont900 {
   align-items: center;
   color: #2EB90B;
   line-height: 14px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .check-plus::before {
@@ -1695,6 +1726,31 @@ footer .Cont900 {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 13px;
   flex: 0 0 13px;
+}
+
+.icon-edit {
+  display: block;
+  background: url("../images/icon-edit-mini.svg") center center no-repeat;
+  width: 20px;
+  height: 16px;
+  padding: 3px;
+}
+
+.icon-edit:hover {
+  cursor: pointer;
+}
+
+.icon-delete {
+  display: block;
+  background: url("../images/icon-delete.svg") center top no-repeat;
+  width: 20px;
+  height: 16px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.icon-delete:hover {
+  cursor: pointer;
 }
 
 .NavPanel {
@@ -1876,6 +1932,15 @@ footer .Cont900 {
 
 .ListTab__cont.active {
   display: block;
+}
+
+.ListTab__no {
+  background: #F9F9F9;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #222;
 }
 
 .Notific {
@@ -4072,6 +4137,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 10px;
 }
 
+.Link-menu {
+  display: none;
+  height: 27px;
+  background: #F8F8F8;
+  border: 1px solid #CBCBCB;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 27px;
+  color: #2C2C2C;
+  margin-top: 5px;
+}
+
+.Link-menu:hover {
+  cursor: pointer;
+  background: #d8d8d8;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {
@@ -4257,6 +4343,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 2px 5px;
   }
 
+  .Logout {
+    margin-left: 15px;
+  }
+
   .Content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
@@ -4278,6 +4368,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .SideBarR .Task__user {
     margin-top: 0px;
+  }
+
+  .Link-menu {
+    display: block;
+  }
+
+  .Panel__item--hidd1 {
+    display: none;
   }
 }
 
@@ -4379,7 +4477,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .NameUser {
-    width: 60%;
+    width: 90%;
+    margin-right: 0;
   }
 
   .Panel {
@@ -4592,6 +4691,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .TablAccount .tbody {
     width: 820px;
   }
+
+  .popup-menu .Panel__item {
+    margin-left: 0;
+  }
+
+  .Link-menu {
+    padding: 0 10px;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .Panel__item--hidd2 {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -4605,6 +4720,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .Profpasport .Field {
     width: 48%;
+  }
+
+  .popup-menu .Panel__name {
+    display: block;
   }
 }
 
