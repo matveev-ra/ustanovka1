@@ -161,6 +161,19 @@ $(document).ready(function () {
         return false;
     });
 
+     //Вкладки  во вкладке на стр карточка исполнителя
+     $(".WorkTab .WorkTab__head .WorkTab__tab").on("click", function(){
+        var tabs = $(".WorkTab .WorkTab__head .WorkTab__tab")
+            cont = $(".WorkTab .WorkTab__body .WorkTab__cont");
+        // Удаляем классы active
+        tabs.removeClass("active");
+        cont.removeClass("active");
+        // Добавляем классы active
+        $(this).addClass("active");
+        cont.eq($(this).index()).addClass("active");
+        return false;
+    });
+
    //выводит плейсхолдер у input - date
     // $('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function() {
     //     var el = this, type = $(el).attr('type');
@@ -173,6 +186,7 @@ $(document).ready(function () {
     //         if ($(el).val() == '') $(el).attr('type', 'text');
     //     });
     // });
+
     $('.inputdate').on('focus', function() {
         $(this).attr('type', 'date') }
       ).on('blur', function() {
@@ -264,11 +278,36 @@ $(document).ready(function () {
         $('[name="phone"]').mask('+7 (999) 999-99-99');
        });
        
-   //подключение плагина select2 lkz select полей  
+   //подключение плагина select2 для select полей  
    $(".select2").select2({
          minimumResultsForSearch: Infinity,
          width : 'resolve' 
          
+    });
+   $(".select-city").select2({
+         width : 'resolve' 
+         
+    });
+
+
+ 
+
+    ////select - категории, выделение категории 
+    function formatState1 (state) {
+
+        if ($(state.element).hasClass('title')){
+            var $state = $( '<b>' + state.text + '</b>' );
+            return $state;
+        } 
+        else {
+            return  state.text ;
+        }
+        
+      };
+      
+    $(".select-category").select2({
+        minimumResultsForSearch: Infinity,
+        templateResult: formatState1,
     });
 
 
@@ -402,16 +441,17 @@ $(function() {
 // работа вкладок в режиме select - замена названия активной вкладки
 $('.ListTab__tab').on('click', function(e){
     if($('.ListTab__head').hasClass('active') && $('body').hasClass('body_pointer') ){
-        $(".selectlink-control2").html($(this).text());
+        $(".selectlink-control").html($(this).text());
         $('.ListTab .ListTab__head').slideUp(200);
     
     } else if  ( $('body').hasClass('body_pointer') ) {
         // $(this).addClass('active');
-        $(".selectlink-control2").html($(this).text());
-        $('.ListTab .ListTab__head').slideUp(200);
+        $(".selectlink-control").html($(this).text());
+        $('.ListTab .ListTab__head').slideUp(200); 
     } 
     
 });
+
 $('.ProfTab__tab').on('click', function(e){
     if($('.ProfTab__head').hasClass('active') && $('body').hasClass('body_pointer') ){
         $(".selectlink-control2").html($(this).text());
@@ -525,16 +565,13 @@ $(".delete-js").click(function(e){
 
     $('#ModalDelete').bPopup({
         positionStyle: 'fixed' ,
-        closeClass:'close'
+        closeClass:'modalclose'
+     
     });
  
 });
-// $('#plus').click(clickPrev);  
-//      function clickPrev(){
-//         preventDefault();
-//       $('#input__file').trigger('click');
-//       };
 
+//клик по кнопкк плюс - кторый инициирует клк по полю input type="file"
       $("#plus").click(function(e){
         // поле не заполнено;
         e.preventDefault();
@@ -542,5 +579,17 @@ $(".delete-js").click(function(e){
      
     });
 
+
+     $(".Executor__favorit span").click(function(){
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')){
+
+            $(this).text("В избранном");
+        } else {
+            $(this).text("В избранное");
+        }
+     
+    });
+    
 
 });

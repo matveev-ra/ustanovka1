@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Карточка исполнителя</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/layout.css" type="text/css"/>
+	<link rel="stylesheet" href="styles/select2.css" type="text/css"/>
+
+
+<body>
+
+ 
+<div class="Main">
+
+  <div class="Top">
+    <div class="Top__in Cont1120" id="Topmenu">
+
+      <div class="Top__namecomp"> Мелдана <span>партнер</span> </div>
+      <div class="logo-mini"><a href=""><img src="images/logo-mini.svg" alt=""></a> </div>
+
+      <div id="hamburger">
+        <span></span>
+      </div>
+      
+      <div class="Top__right dropDownMenu">
+        
+        <div class="Top-menu ">
+          <ul class="menu ">
+            <li><span>Документы</span>
+              <ul class="acitem">
+                <li><a href="">Акт выполненых работ</a></li>
+                <li><a href="">Оплата налогов</a></li>
+              </ul>
+            </li>
+            <li><span>Партнерам</span>
+              <ul class="acitem">
+                <li><a href="">Публичная оферта</a></li>
+                <li><a href="">Кодекс партнера</a></li>
+                <li><a href="">Рекомендации специалисту</a></li>
+              </ul>
+            </li>
+            <li><span>Помошь</span>
+              <ul class="acitem">
+                  <li><a href="">Исполнителям</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="Geo">
+          <a href="#popup-location" data-fancybox="" ><i class="Geo__icon"></i>Екатеринбург</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /Top-->
+
+  <div class="ContWrap Cont1120">
+    <div class="SideBar">
+
+      <div class="Logo"><a href=""><img src="images/logo.png" alt=""></a></div>
+      <div class="Avatar"><a href=""><img src="images/avatar-no.png" alt=""></a> </div>
+      <div class="NameUser">
+        <a href="">
+          Александр<br/>
+          Константинович<br/>
+          Константинопольский
+        </a>
+      </div>
+
+      <div class="Panel">
+        <div class="Panel__item">
+          <a href="" >
+            <i class="Panel__icon "><img src="images/icon-notific.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name">Уведомления</span>
+            <span class="Panel__num-notific">12</span>
+          </a>
+        </div>
+        <div class="Panel__item Panel__item--hidd2">
+          <a href="" class="active">
+            <i class="Panel__icon "><img src="images/icon-task.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name Panel__name-task">Мои задания</span>
+          </a>
+        </div>
+        <div class="Panel__item Panel__item--hidd2">
+          <a href="">
+            <i class="Panel__icon "><img src="images/icon-menu-addtask.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name Panel__name-task">Добавить задания</span>
+          </a>
+        </div>
+
+        <div class="Link-menu">Еще</div>
+       
+        <div class="Panel__item Panel__item--hidd1 ">
+          <a href="">
+            <i class="Panel__icon "><img src="images/icon-menu-executor.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name Panel__name-task">Исполнители</span>
+          </a>
+        </div>
+        <div class="Panel__item Panel__item--hidd1">
+          <a href="">
+            <i class="Panel__icon "><img src="images/icon-menu-lead.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name Panel__name-task">Руководители</span>
+          </a>
+        </div>
+        <div class="Panel__item Panel__item--hidd1">
+          <a href="">
+            <i class="Panel__icon "><img src="images/icon-menu-blacklist.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name Panel__name-task">Черный список</span>
+          </a>
+        </div>
+        <div class="Panel__item Panel__item--hidd1">
+          <a href="">
+            <i class="Panel__icon "><img src="images/icon-menu-favorite.svg" alt="" class="img-svg"></i>
+            <span class="Panel__name Panel__name-task">Избранное</span>
+          </a>
+        </div>
+        
+      </div>
+      <!-- /Panel-->
+
+      <div class="Logout">
+        <a href="">
+          <i class="Logout__icon"></i>
+          <span>Выход</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="Content ContBalance">
+      <div class="HDmain">Карточка исполнителя</div>
+
+      <div class="ListTask">
+
+        <div class="ListTab" id="ListTabs">
+
+          <div class="selectlink-control">Информация</div>
+
+          <div class="ListTab__head active">
+            <div class="ListTab__tab ">Информация</div>
+            <div class="ListTab__tab">Персональные данные</div>
+            <div class="ListTab__tab ">Выплаты</div>
+            <div class="ListTab__tab ">Задания</div>
+            <div class="ListTab__tab active">Отзывы</div>
+            <div class="ListTab__tab ">Проверка личности</div>
+          </div>
+
+          <div class="ListTab__body">
+            <div class="ListTab__cont ">
+              <div class="ExeInfo">
+                <div class="ExeInfo__sidebar">
+                  <div class="ExeInfo__user">
+
+                    <div class="ExeInfo__avatar">
+                      <img src="images/img-avatar.jpg" alt="">
+                    </div>
+
+                    <div class="Task__stars">
+                      <img src="images/icon-star-full.svg" alt="">
+                      <img src="images/icon-star.svg" alt="">
+                      <img src="images/icon-star.svg" alt="">
+                      <img src="images/icon-star.svg" alt="">
+                      <img src="images/icon-star.svg" alt="">
+                    </div>
+
+                    <div class="Task__rating">
+                      <div class="Task__like">
+                        <i class="Task__like-icon"></i>
+                        <span>345</span>
+                      </div>
+                      <div class="Task__dislike">
+                        <i class="Task__dislike-icon"></i>
+                        <span>345</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ExeInfo__btn">
+                    <a href="" class="btn-form">Предложить задание</a>
+                    <button class="btn-form grey2" id="black-list">В черный список</button>
+                  </div>
+                </div>
+                <div class="ExeInfo__text">
+                  
+                  <div class="ExeInfo__text-item">
+                    <div class="ExeInfo__title">Иван Маркович Степанов</div>
+                    <p>
+                      <span>Телефон: +7 (922) 610-82-92</span>
+                      <span>E-mail: mail@mail.ru</span>
+                      <span>Город: Екатеринбург</span>
+                    </p>
+                    <p>
+                      Выполнил заданий: <strong>63</strong>
+                    </p>
+                  </div>
+
+                  <div class="ExeInfo__text-item">
+                    <div class="ExeInfo__title">Специализация</div>
+                    <ul>
+                      <li>Сети связи
+                        <ul>
+                          <li>Сонтаж локальных сетей связи (СКС)</li>
+                          <li>Монтаж оптических сетей связи (ВОЛС)</li>
+                        </ul>
+                      </li>
+                      <li>Репитеры и интернет
+                        <ul>
+                          <li>Беспроводной интернет за городом</li>
+                          <li>Установка и настройка WiFi</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="ListTab__cont">
+              <div class="ExeData">
+                <p>
+                  Дата рождения: 
+                  <span>18.09.1988</span>
+                </p>
+                <p>
+                  Данные паспорта: 
+                  <span>Серия: 298726, Номер: 333333, Дата выдачи: 24.02.1986</span>
+                </p>
+                <div class="ExeData__img"><img src="images/pasport.jpg" alt=""></div>
+                <p>
+                  Место положения:
+                  <span>г. Североуральск, ул. Плющенко — 23</span>
+                </p>
+                <div class="ExeData__map"><img src="images/img-map.jpg" alt=""></div>
+                <p>
+                  Автомобиль и транспорт: 
+                  <span>другое</span>
+                </p>
+                <p>
+                  Командировки по России:
+                  <span>другое</span>
+                </p>
+                <p>
+                  Реквизиты для перечисления оплаты за работу:
+                  <span></span>
+                </p>
+                <p>
+                  Физическое лицо: 
+                  <span>только нал</span>
+                </p>
+                <p>
+                  Коротко о себе:
+                  <span>другое</span>
+                </p>
+              </div>
+              <!-- /ExeData-->
+            </div>
+
+            <div class="ListTab__cont ">
+              <div class="Balance">
+
+                <div class="TablExecutor">
+                  <div class="TablExecutor__thead">
+                    <div class="TablExecutor__th">№ пл.</div>
+                    <div class="TablExecutor__th">№</div>
+                    <div class="TablExecutor__th">Название</div>
+                    <div class="TablExecutor__th">Бюджет</div>
+                    <div class="TablExecutor__th">Начислено</div>
+                    <div class="TablExecutor__th">Выплачено</div>
+                    <div class="TablExecutor__th">Статус</div>
+                  </div>
+                  <div class="TablExecutor__tbody">
+                    <div class="TablExecutor__tr">
+                      <div class="TablExecutor__td">235</div>
+                      <div class="TablExecutor__td">6568</div>
+                      <div class="TablExecutor__td">Накладные <strong>20 </strong><a href="">Рефлектограммы</a></div>
+                      <div class="TablExecutor__td">100 000</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span class="hug-red"></span></div>
+                    </div>
+                    <div class="TablExecutor__tr">
+                      <div class="TablExecutor__td">235</div>
+                      <div class="TablExecutor__td">6568</div>
+                      <div class="TablExecutor__td">Накладные <strong>20 </strong><a href="">Рефлектограммы и другие более </a></div>
+                      <div class="TablExecutor__td">100 000</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span class="hug-orange"></span></div>
+                    </div>
+                    <div class="TablExecutor__tr">
+                      <div class="TablExecutor__td">235</div>
+                      <div class="TablExecutor__td">6568</div>
+                      <div class="TablExecutor__td">Накладные <strong>20 </strong><a href="">Рефлектограммы</a></div>
+                      <div class="TablExecutor__td">100 000</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span class="hug-green"></span></div>
+                    </div>
+                    <div class="TablExecutor__tr">
+                      <div class="TablExecutor__td">235</div>
+                      <div class="TablExecutor__td">6568</div>
+                      <div class="TablExecutor__td">Накладные <strong>20 </strong><a href="">Рефлектограммы и другие более </a></div>
+                      <div class="TablExecutor__td">100 000</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span class="hug-green"></span></div>
+                    </div>
+                    <div class="TablExecutor__tr">
+                      <div class="TablExecutor__td">235</div>
+                      <div class="TablExecutor__td">6568</div>
+                      <div class="TablExecutor__td">Накладные <strong>20 </strong><a href="">Рефлектограммы</a></div>
+                      <div class="TablExecutor__td">100 000</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span>100</span> 15.08.2021</div>
+                      <div class="TablExecutor__td"><span class="hug-green"></span></div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="NavPanel">
+                  <div class="Pagenav">
+                    <ul>
+                      <li><a href="">1</a></li>
+                      <li class="active"><span>2</span></li>
+                      <li><a href="">3</a></li>
+                    </ul>
+                  </div>
+        
+                  <div class="Pagelist">
+                    <select   class="select2" style="width: 230px;">
+                      <option value="10">Показывать по 10 заданий</option>
+                      <option value="20">Показывать по 20 заданий</option>
+                      <option value="30">Показывать по 30 заданий</option>
+                      <option value="40">Показывать по 40 заданий</option>
+                      <option value="50">Показывать по 50 заданий</option>
+                    </select>
+                  </div>
+        
+                </div>
+          
+              </div>
+            </div>
+
+            <div class="ListTab__cont ">
+              <div class="WorkTab" id="WorkTabs">
+                <div class="WorkTab__head">
+                  <div class="WorkTab__tab active"><span>В работе</span></div>
+                  <div class="WorkTab__tab"><span>Выполнено</span></div>
+                  <div class="WorkTab__tab "><span>Завершено</span></div>
+                  <div class="WorkTab__tab "><span>Все</span></div>
+                </div>
+                <div class="WorkTab__body">
+                  <div class="WorkTab__cont active">
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-orange">В работе</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-orange">В работе</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-orange">В работе</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                  </div>
+                  <!-- /WorkTab_cont-->
+                  <div class="WorkTab__cont">
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-plus">Выполнено исполнителем</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-plus">Выполнено исполнителем</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-plus">Выполнено исполнителем</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                  </div>
+                  <!-- /WorkTab_cont-->
+                  <div class="WorkTab__cont">
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-red">Завершен</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-red">Завершен</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-red">Завершен</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                  </div>
+                  <!-- /WorkTab_cont-->
+                  <div class="WorkTab__cont">
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-plus">Выполнено исполнителем</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-orange">В работе</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                    <div class="Task">
+                      <a href="" class="Task__link"></a>
+                      <div class="Task__cont">
+                        <div class="Task__body">
+                          <div class="Task__title">Установка турникета на КПП</div>
+                          <div class="Task__text">Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... </div>
+                        </div>
+                        <div class="Task__info">
+                          <div class="Media">
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-time"></i>
+                                <span>1 день назад</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-map"></i>
+                                <span>Екатеренбург</span>
+                              </div>
+                            </div>
+                            <div class="Media__block">
+                              <div class="Media__item">
+                                <i class="Media__icon icon-message"></i>
+                                <span>1 отлик</span>
+                              </div>
+                              <div class="Media__item">
+                                <i class="Media__icon icon-see"></i>
+                                <span>12</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Task__cont-->
+                      <div class="Task__user">
+                        <div class="Task__ganarar">1 000 000 ₽</div>
+                        <div class="Task__status">
+                          <span class="check-red">Завершен</span>
+                        </div>
+                      </div>
+                      <!-- /Task__user-->
+                    </div>
+                    <!-- /Task-->
+                  </div>
+                  <!-- /WorkTab_cont-->
+                </div>
+              </div>
+            </div>
+
+            <div class="ListTab__cont active">
+              <div class="WorkTab">
+                <div class="WorkTab__head">
+                  <div class="WorkTab__tab active"><span>Положительные</span></div>
+                  <div class="WorkTab__tab"><span>Нейтральные</span></div>
+                  <div class="WorkTab__tab"><span>Отрицательные</span></div>
+                  <div class="WorkTab__tab"><span>Все</span></div>
+                </div>
+                <div class="WorkTab__body">
+                  <div class="WorkTab__cont active">
+                    
+                    <div class="AddComField active" >
+                      <div class="AddComField__avatar"><img src="images/avatar-no-mini.png" alt=""></div>
+                      <div class="AddComField__info">
+                        <div class="AddComField__text">
+                          <textarea name="" id="commenttext" placeholder="Добавить комментарий"></textarea>
+                        </div>
+                        <div class="AddComField__btn">
+                          <button class="btn-form" id="">Отправить</button>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+                    
+                    <div class="NavPanel">
+                      <div class="Pagenav">
+                        <ul>
+                          <li><a href="">1</a></li>
+                          <li class="active"><span>2</span></li>
+                          <li><a href="">3</a></li>
+                        </ul>
+                      </div>
+            
+                      
+            
+                    </div>
+                  </div>
+                  <div class="WorkTab__cont ">
+                    
+                    <div class="AddComField active" >
+                      <div class="AddComField__avatar"><img src="images/avatar-no-mini.png" alt=""></div>
+                      <div class="AddComField__info">
+                        <div class="AddComField__text">
+                          <textarea name="" id="commenttext" placeholder="Добавить комментарий"></textarea>
+                        </div>
+                        <div class="AddComField__btn">
+                          <button class="btn-form" id="">Отправить</button>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+                    
+                    <div class="NavPanel">
+                      <div class="Pagenav">
+                        <ul>
+                          <li><a href="">1</a></li>
+                          <li class="active"><span>2</span></li>
+                          <li><a href="">3</a></li>
+                        </ul>
+                      </div>
+            
+                      
+            
+                    </div>
+                  </div>
+                  <div class="WorkTab__cont ">
+                    
+                    <div class="AddComField active" >
+                      <div class="AddComField__avatar"><img src="images/avatar-no-mini.png" alt=""></div>
+                      <div class="AddComField__info">
+                        <div class="AddComField__text">
+                          <textarea name="" id="commenttext" placeholder="Добавить комментарий"></textarea>
+                        </div>
+                        <div class="AddComField__btn">
+                          <button class="btn-form" id="">Отправить</button>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+                    
+                    <div class="NavPanel">
+                      <div class="Pagenav">
+                        <ul>
+                          <li><a href="">1</a></li>
+                          <li class="active"><span>2</span></li>
+                          <li><a href="">3</a></li>
+                        </ul>
+                      </div>
+            
+                      
+            
+                    </div>
+                  </div>
+                  <div class="WorkTab__cont ">
+                    
+                    <div class="AddComField active" >
+                      <div class="AddComField__avatar"><img src="images/avatar-no-mini.png" alt=""></div>
+                      <div class="AddComField__info">
+                        <div class="AddComField__text">
+                          <textarea name="" id="commenttext" placeholder="Добавить комментарий"></textarea>
+                        </div>
+                        <div class="AddComField__btn">
+                          <button class="btn-form" id="">Отправить</button>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+
+                      <div class="ZUserRev__item">
+                        <div class="Task__infouser">
+                          <div class="Task__avatar">
+                            <img src="images/avatar-mini.png" alt="">
+                            <div class="off online"></div>
+                          </div>
+                          <div class="Task__user-in">
+                            <div class="Task__nameuser">Олег Константинович</div>
+                           </div>
+                        </div>
+                        <div class="ZUserRev__body">
+                          <div class="pl"></div>
+                          <div class="ZUserRev__hd">
+                            <div class="icon"><img src="images/icon-like.svg" alt="" class="img-svg"></div>
+                            <div class="nametask">Задание <a href="">Название задания</a></div>
+                          </div>
+                          <div class="ZUserRev__coment">
+                            Текст комментария
+                          </div>
+                          <div class="ZUserRev__foot">
+                            <div class="Media__item">
+                              <i class="Media__icon icon-time"></i>
+                              <span>1 день назад</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /ZUserRev__item-->
+                    
+                    <div class="NavPanel">
+                      <div class="Pagenav">
+                        <ul>
+                          <li><a href="">1</a></li>
+                          <li class="active"><span>2</span></li>
+                          <li><a href="">3</a></li>
+                        </ul>
+                      </div>
+            
+                      
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ListTab__cont ">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    
+
+  </div>
+  <!-- /ContWrap-->
+
+  <footer>
+    <div class="Cont900">
+      <div class="Foot__app">
+        <a href="https://apps.apple.com/ru/app/%D0%BC%D0%B5%D0%BB%D0%B4%D0%B0%D0%BD%D0%B0-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80/id1514381428?mt=8"><img src="images/img-appstore.png" alt=""></a>
+        <a href="https://play.google.com/store/apps/details?id=com.meldana.partner&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="images/img-googleplay.png" alt=""></a>
+      </div>
+
+      <div class="Socnet">
+        <div class="Socnet__title">Мы в соц сетях:</div>
+        <div class="Socnet__wrap">
+          <a href="//vk.com/meldana"><img src="images/icon-vk.svg" alt=""></a>
+          <a href="//facebook.com/meldana"><img src="images/icon-facebook.svg" alt=""></a>
+          <a href="//instagram.com/meldana_com"><img src="images/icon-instagram.svg" alt=""></a>
+          <a href="#"><img src="images/icon-ok.svg" alt=""></a>
+          <a href="//twitter.com/meldanaplus"><img src="images/icon-twiter.svg" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </footer>
+
+</div>
+
+
+<!--MODAL //////////////////  - Modal   ////////////////////-->
+<div class="ModalF ModalMenu" id="MoadalMenu" style=" display: none;">
+  <div class="close"></div>
+  <div class="Modal__body popup-menu">
+
+      <div class="Panel__item">
+        <a href="" >
+          <i class="Panel__icon "><img src="images/icon-notific.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name">Уведомления</span>
+          <span class="Panel__num-notific">12</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="" class="active">
+          <i class="Panel__icon "><img src="images/icon-task.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Мои задания</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-addtask.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Добавить задания</span>
+        </a>
+      </div>
+
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-executor.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Исполнители</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-lead.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Руководители</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-blacklist.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Черный список</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-favorite.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Избранное</span>
+        </a>
+      </div>
+      
+    
+  </div>
+</div>
+<!-- /MODAL //////////////////////////////////////////////-->
+
+
+<!--MODAL //////////////////  - форма  ////////////////////-->
+<div class="ModalF " id="ModalDelete" style=" display: none;">
+  <div class="close modalclose"></div>
+
+  <div class="Modal__body">
+    <div class="Modal__hd">Закрыть задание?</div>
+    <br/>
+    <button class="btn-cansel modalclose">Отмена</button>
+  </div>
+  <button type="submit" value="" name="submit" id="submit" class="btn-footform">Удалить</button>
+
+</div>
+<!-- /MODAL //////////////////////////////////////////////-->
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.bpopup.js"></script> 
+<script src="js/jquery.maskedinput.js"></script> 
+<script src="js/select2.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+</body>
+</html>
