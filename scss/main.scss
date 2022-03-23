@@ -4447,8 +4447,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-
-
+.Reviews-no {
+  background: #F8F8F8;
+  border-radius: 7px;
+  width: 100%;
+  padding: 15px;
+  @include font400(14px,20px);
+  color: #494949;
+}
 
 
 

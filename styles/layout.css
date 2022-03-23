@@ -4750,6 +4750,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: block;
 }
 
+.Reviews-no {
+  background: #F8F8F8;
+  border-radius: 7px;
+  width: 100%;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #494949;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {

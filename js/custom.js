@@ -162,9 +162,20 @@ $(document).ready(function () {
     });
 
      //Вкладки  во вкладке на стр карточка исполнителя
-     $(".WorkTab .WorkTab__head .WorkTab__tab").on("click", function(){
-        var tabs = $(".WorkTab .WorkTab__head .WorkTab__tab")
-            cont = $(".WorkTab .WorkTab__body .WorkTab__cont");
+     $("#WorkTabs .WorkTab__head .WorkTab__tab").on("click", function(){
+        var tabs = $("#WorkTabs .WorkTab__head .WorkTab__tab")
+            cont = $("#WorkTabs .WorkTab__body .WorkTab__cont");
+        // Удаляем классы active
+        tabs.removeClass("active");
+        cont.removeClass("active");
+        // Добавляем классы active
+        $(this).addClass("active");
+        cont.eq($(this).index()).addClass("active");
+        return false;
+    });
+     $("#RevTabs .WorkTab__head .WorkTab__tab").on("click", function(){
+        var tabs = $("#RevTabs .WorkTab__head .WorkTab__tab")
+            cont = $("#RevTabs .WorkTab__body .WorkTab__cont");
         // Удаляем классы active
         tabs.removeClass("active");
         cont.removeClass("active");
