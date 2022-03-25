@@ -2823,6 +2823,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url("../images/close2.png") 0 0 no-repeat;
   width: 14px;
   height: 14px;
+  z-index: 10;
 }
 
 .close2:hover {
@@ -3695,6 +3696,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: flex-start;
 }
 
+.Coment-item__img .FormatF {
+  height: 100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .Coment-item__imgWr {
   background: #FFFFFF;
   border: 1px solid #CBCBCB;
@@ -3731,7 +3739,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-.Coment-item__img-info .download span {
+.Coment-item__img-info .download a {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
@@ -3745,13 +3753,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 10px;
+  text-decoration: none;
 }
 
-.Coment-item__img-info .download span:hover {
+.Coment-item__img-info .download a:hover {
   text-decoration: underline;
 }
 
-.Coment-item__img-info .download span::before {
+.Coment-item__img-info .download a::before {
   content: ' ';
   display: block;
   background: url("../images/icon-down-mini.svg") center top no-repeat;
@@ -4759,6 +4768,70 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 20px;
   color: #494949;
+}
+
+.FormatF {
+  background: url("../images/patern.png") left top repeat;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.FormatF span {
+  color: #c5c5c5;
+  font-size: 24pt;
+  opacity: .24;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.FormatF::after {
+  content: ' ';
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -5px;
+  margin-right: -10px;
+}
+
+.FormatF.doc::after {
+  background: url("../images/icon-format-doc.svg") center top no-repeat;
+}
+
+.FormatF.txt::after {
+  background: url("../images/icon-format-txt.svg") center top no-repeat;
+}
+
+.FormatF.pdf::after {
+  background: url("../images/icon-format-pdf.svg") center top no-repeat;
+}
+
+.FormatF.xls::after {
+  background: url("../images/icon-format-xls.svg") center top no-repeat;
+}
+
+.FormatF.zip::after {
+  background: url("../images/icon-format-zip.svg") center top no-repeat;
+}
+
+.FormatF.rar::after {
+  background: url("../images/icon-format-rar.svg") center top no-repeat;
 }
 
 /*# sourceMappingURL=layout.css.map */

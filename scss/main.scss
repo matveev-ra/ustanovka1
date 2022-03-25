@@ -2659,6 +2659,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url('../images/close2.png') 0 0 no-repeat;
   width: 14px;
   height: 14px;
+  z-index: 10;
 
   @include max-s(540px) {
     right: 0;
@@ -3472,6 +3473,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    .FormatF {
+      height: 100px;
+      justify-content: center;
+    }
     
   }
 
@@ -3503,13 +3509,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       justify-content: center;
       width: 100%;
       cursor: pointer;
-      span {
+      a {
         @include font400(10px,12px);
         color: #494949;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap:10px;
+        text-decoration: none;
 
         &:hover {
           text-decoration: underline;
@@ -4457,6 +4464,58 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+
+
+.FormatF {
+  background: url('../images/patern.png') left top repeat; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  height: 100%;
+
+  span {
+    color: #c5c5c5;
+    font-size: 24pt;
+    opacity: .24;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &::after {
+    content:' ';
+    display:block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -5px;
+    margin-right: -10px;
+  }
+
+  &.doc::after {
+    background: url('../images/icon-format-doc.svg') center top no-repeat; 
+  }
+  &.txt::after {
+    background: url('../images/icon-format-txt.svg') center top no-repeat; 
+  }
+  &.pdf::after {
+    background: url('../images/icon-format-pdf.svg') center top no-repeat; 
+  }
+  &.xls::after {
+    background: url('../images/icon-format-xls.svg') center top no-repeat; 
+  }
+  &.zip::after {
+    background: url('../images/icon-format-zip.svg') center top no-repeat; 
+  }
+  &.rar::after {
+    background: url('../images/icon-format-rar.svg') center top no-repeat; 
+  }
+
+}
 
 
 
