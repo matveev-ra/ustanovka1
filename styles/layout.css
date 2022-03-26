@@ -3773,6 +3773,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 12px;
   line-height: 20px;
   color: #494949;
+  margin-bottom: 15px;
 }
 
 .Coment-item.boss .Coment-item__name {

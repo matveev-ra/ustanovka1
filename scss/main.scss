@@ -3537,6 +3537,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   &__text {
     @include font400(12px,20px);
     color: #494949;
+    margin-bottom: 15px;
   }
   
   &.boss {
