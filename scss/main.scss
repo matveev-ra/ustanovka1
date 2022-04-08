@@ -795,6 +795,14 @@
     @include font600(12px,14px);
     color: #000;
     margin-bottom: 5px;
+    a {
+      @include font600(12px,14px);
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__stars {
@@ -1022,6 +1030,7 @@ footer {
   align-items: center;
   flex: 0 0 auto;
   margin-top: auto;
+  position: relative;
 
   .Cont900 {
     display: flex;
@@ -2620,6 +2629,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  &__wrap-left {
+    justify-content: start;
+
+    .Field:not(:last-child) {
+      margin-right: 3.6%;
+
+      @include max-s(525px){
+         margin-right: 0;
+      }
+    }
+  }
 
   .Field {
     width: 31%;
@@ -3139,6 +3159,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   &__text {
     @include font400(12px,20px);
     color: #494949;
+    margin-bottom: 20px;
   }
 }
 
@@ -3488,8 +3509,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 7px;
     font-size: 0;
     margin-bottom: 10px;
+    a {
+      display: block;
+    }
     
     img {
+      width: 100%;
       padding: 20px 0;
     }
   }
@@ -4298,13 +4323,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .ExeInfo {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding-top: 80px;
+
+    @include max-s(450px){
+      flex-wrap: wrap;
+    }
 
   &__sidebar {
     flex: 0 0 192px;
     margin-right: 30px;
+    @include max-s(450px){
+      flex-wrap: wrap;
+      margin: 0 auto 20px;
+    }
   }
 
   &__user {
@@ -4344,8 +4377,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     .grey2 {
       width: 100%;
+
+      &.active {
+        background: #b1aeae;
+      }
     }
-  }
+    }
+    
 
   &__text {
     flex: 1 1 auto;
@@ -4420,19 +4458,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: start;
     margin-bottom: 40px;
     border-bottom: 1px solid #E9E9E9;
+
+      @include max-s(600px){
+        border:none;
+        justify-content: center;
+      }
   }
   &__tab {
     @include font400(14px,18px);
     color: #222;
 
-    &+& {
-      padding-left: 30px;
+    &:not(:last-child) {
+      padding-right: 30px;
+  
+      @include max-s(600px){
+        padding: 0 10px;  
+      }
+    }
+    &:last-child {
+      @include max-s(600px){
+        padding: 0 10px;  
+      }
     }
 
     span {
       display: block;
       padding-bottom: 20px;
+
+        @include max-s(600px){
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+        }
     }
+
     &.active, &:hover {
       span {
         border-bottom: 3px solid #23B4BC;
@@ -4440,12 +4498,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       }
          
     }
-
-
   }
-  &__body {
 
-  }
+ 
+
+  //&__body {}
+
   &__cont {
     &.active {
       display: block;
@@ -4518,7 +4576,57 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
+.Report {
+  background: #23B4BC;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__info {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include max-s(520px){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    p {
+      @include font600(14px, 20px);
+      color: #fff;
+      padding: 15px;
+    }
+
+  }
+
+  .close {
+    width: 20%;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.VyborTask {
+  .checkbox {
+    margin-bottom: 10px;
+  }
+}
 
 
 

@@ -650,6 +650,18 @@
   margin-bottom: 5px;
 }
 
+.Task__nameuser a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.Task__nameuser a:hover {
+  text-decoration: underline;
+}
+
 .Task__rating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,6 +916,7 @@ footer {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin-top: auto;
+  position: relative;
 }
 
 footer .Cont900 {
@@ -2793,6 +2806,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: space-between;
 }
 
+.Profpasport__wrap-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.Profpasport__wrap-left .Field:not(:last-child) {
+  margin-right: 3.6%;
+}
+
 .Profpasport .Field {
   width: 31%;
   margin-bottom: 30px;
@@ -3246,6 +3269,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 12px;
   line-height: 20px;
   color: #494949;
+  margin-bottom: 20px;
 }
 
 .TaskM-Bar {
@@ -3713,7 +3737,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 10px;
 }
 
+.Coment-item__imgWr a {
+  display: block;
+}
+
 .Coment-item__imgWr img {
+  width: 100%;
   padding: 20px 0;
 }
 
@@ -4592,8 +4621,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -4641,6 +4670,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .ExeInfo__btn .grey2 {
   width: 100%;
+}
+
+.ExeInfo__btn .grey2.active {
+  background: #b1aeae;
 }
 
 .ExeInfo__text {
@@ -4737,8 +4770,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #222;
 }
 
-.WorkTab__tab + .WorkTab__tab {
-  padding-left: 30px;
+.WorkTab__tab:not(:last-child) {
+  padding-right: 30px;
 }
 
 .WorkTab__tab span {
@@ -4833,6 +4866,67 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .FormatF.rar::after {
   background: url("../images/icon-format-rar.svg") center top no-repeat;
+}
+
+.Report {
+  background: #23B4BC;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Report__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Report__info {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Report__info p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  padding: 15px;
+}
+
+.Report .close {
+  width: 20%;
+  text-align: center;
+}
+
+.Report .close:hover {
+  cursor: pointer;
+}
+
+.VyborTask .checkbox {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=layout.css.map */
@@ -5467,6 +5561,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .popup-menu .Panel__name {
     display: block;
   }
+
+  .WorkTab__head {
+    border: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .WorkTab__tab:not(:last-child) {
+    padding: 0 10px;
+  }
+
+  .WorkTab__tab:last-child {
+    padding: 0 10px;
+  }
+
+  .WorkTab__tab span {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -5529,6 +5643,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
   }
 
+  .Profpasport__wrap-left .Field:not(:last-child) {
+    margin-right: 0;
+  }
+
   .Profpasport .Field {
     width: 100%;
   }
@@ -5556,6 +5674,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .Report__info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -5644,6 +5772,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .ModalF {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .ExeInfo {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .ExeInfo__sidebar {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto 20px;
   }
 }
 

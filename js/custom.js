@@ -536,6 +536,11 @@ $('.close5').click(function() {
     $('#Cooke').hide();
     
 });
+$('#close6').click(function() { 
+    $('.Report').hide();
+    
+});
+
 
 
 $('#btnpay').click(function(e) { 
@@ -601,6 +606,36 @@ $(".delete-js").click(function(e){
         }
      
     });
+
+    $("#black-list").click(function(){
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')){
+            $(this).text("В черном списке");
+        } else {
+            $(this).text("В черный список");
+
+        }
+     
+    });
     
 
 });
+
+
+
+//активировать кнопку после заполнения всех полей 
+var inputs = [].slice.call(document.querySelectorAll('input[type="text"]')),
+button = document.querySelector('button#btn-person');
+
+inputs.forEach(function(el){
+  el.addEventListener('input', checkInputs, false);
+});
+
+function checkInputs(){
+	var empty = inputs.filter(function(el){
+    return el.value.trim() === '';
+  }).length;
+  button.disabled = empty !== 0;
+}
+checkInputs();
+////////////////////

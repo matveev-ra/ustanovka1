@@ -145,16 +145,16 @@
           <div class="selectlink-control">Информация</div>
 
           <div class="ListTab__head active">
-            <div class="ListTab__tab ">Информация</div>
+            <div class="ListTab__tab active">Информация</div>
             <div class="ListTab__tab">Персональные данные</div>
             <div class="ListTab__tab ">Выплаты</div>
             <div class="ListTab__tab ">Задания</div>
-            <div class="ListTab__tab active">Отзывы</div>
+            <div class="ListTab__tab ">Отзывы</div>
             <div class="ListTab__tab ">Проверка личности</div>
           </div>
 
           <div class="ListTab__body">
-            <div class="ListTab__cont ">
+            <div class="ListTab__cont active">
               <div class="ExeInfo">
                 <div class="ExeInfo__sidebar">
                   <div class="ExeInfo__user">
@@ -184,7 +184,7 @@
                   </div>
 
                   <div class="ExeInfo__btn">
-                    <a href="" class="btn-form">Предложить задание</a>
+                    <a href="#VyborTask" class="btn-form bpopup">Предложить задание</a>
                     <button class="btn-form grey2" id="black-list">В черный список</button>
                   </div>
                 </div>
@@ -880,7 +880,7 @@
               </div>
             </div>
 
-            <div class="ListTab__cont active">
+            <div class="ListTab__cont ">
               <div class="WorkTab" id="RevTabs">
                 <div class="WorkTab__head">
                   <div class="WorkTab__tab active"><span>Положительные</span></div>
@@ -1470,7 +1470,46 @@
                 </div>
               </div>
             </div>
+
             <div class="ListTab__cont ">
+
+              <div class="Profpasport">
+                <div class="ProfHD">Общие данные</div>
+                <div class="Profpasport__wrap">
+                  <div class="Field">
+                    <input type="text" name="" placeholder="Фамилия*" value="">
+                  </div>
+                  <div class="Field">
+                    <input type="text" name="" placeholder="Имя*" value="">
+                  </div>
+                  <div class="Field">
+                    <input type="text" name="" placeholder="Отчество*"  value="" >
+                  </div>
+                </div>
+                <div class="Profpasport__wrap Profpasport__wrap-left">
+                  <div class="Field">
+                    <input type="text" name="date1" placeholder="Дата рождения*"  value="" class="inputdate">
+                  </div>
+                  <div class="Field">
+                    <input type="text" name="telefon" placeholder="" value="+7(900)999-99-99">
+                  </div>
+                  
+                </div>
+                <div class="ProfHD">Общие данные</div>
+                <div class="Profpasport__wrap">
+                  <div class="Field">
+                    <input type="text" name="seria" placeholder="Серия*" value="">
+                  </div>
+                  <div class="Field">
+                    <input type="text" name="nomer" placeholder="Номер*" value="">
+                  </div>
+                  <div class="Field">
+                    <input type="text" name="date2" placeholder="Дата выдачи*"  value="" class="inputdate">
+                  </div>
+                </div>
+                <button class="btn-form" id="btn-person" disabled="disabled"> Сохранить и проверить </button>
+              </div>
+              <!-- /.Profpasport -->
 
             </div>
           </div>
@@ -1507,8 +1546,18 @@
 
     </div>
 
-    
+  <div class="Report">
+    <div class="Report__wrap Cont1120">
+      <div class="Report__info">
+        <p>Запрос сформирован. Для получения отчета нажмите кнопку получить отчет</p>
+        <button class="btn-form orange">Получить отчет</button>
+      </div>
+      <div class="close" id="close6"><img src="images/close-white.svg" alt=""></div>
+    </div>
+  </div>
   </footer>
+
+ 
 
 </div>
 
@@ -1583,6 +1632,73 @@
 </div>
 <!-- /MODAL //////////////////////////////////////////////-->
 
+<!--MODAL //////////////////  - форма  ////////////////////-->
+<div class="ModalF " id="VyborTask" style=" display: none;">
+  <div class="close"></div>
+
+  <div class="Modal__body">
+    <div class="Modal__hd">Выберите задание</div>
+    
+    <!-- <div class="Modal__hd">Список заданий пуст</div> -->
+
+    <div class="VyborTask">
+      <label class="checkbox">
+        <input type="radio" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="review" value="Положительный" >
+        <div class="checkbox__text">
+          Наименование задания
+        </div>
+      </label>
+    </div>
+
+
+
+  </div>
+  <button type="submit" value="" name="submit" id="submit" class="btn-footform">Предложить задание</button>
+
+</div>
+<!-- /MODAL //////////////////////////////////////////////-->
 
 
 <script src="js/jquery-3.6.0.min.js"></script>
