@@ -4668,8 +4668,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+.NewTask__item {
+  margin-bottom: 30px;
 
 
+  .checkbox {
+    margin: 20px 0 0 ;
+  }
+}
+ 
+.Budzhet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  
+  .checkbox {
+    margin-top: 10px;
+    margin-left: 4%; 
+    @include max-s(525px){
+      margin-top: 0; 
+      margin-left: 0;
+    }
+  }
+}
 
 
 

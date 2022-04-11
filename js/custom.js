@@ -205,9 +205,9 @@ $(document).ready(function () {
       ).on('mouseover', function() {
         $(this).attr('type', 'date') }
       )
-    //   .on('mouseout', function() {
-    //     $(this).attr('type', 'text') }
-    //   )
+      .on('mouseout', function() {
+        $(this).attr('type', 'text') }
+      )
       ;
     
     //клик по ссылке - забыли пароль
