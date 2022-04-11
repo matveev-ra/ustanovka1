@@ -369,6 +369,7 @@
 .SideBar {
     flex: 0 0 190px;
     margin-right: 30px; 
+    margin-top: 70px;
     //border: 1px solid red;
     @include max-s(992px)  {
       margin-right: 15px; 
@@ -380,6 +381,7 @@
       justify-content: start;
       margin-bottom: 10px;
       margin-right: 0px; 
+      margin-top: 0;
     }
 }
 
@@ -408,8 +410,12 @@
   }
   
   img {
-    @include max-s(768px)  {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    @include max-s(840px)  {
       width: 58px;
+      height: 58px;
     }
   }
  
@@ -622,6 +628,7 @@
 .SideBarR {
   flex: 0 0 190px;
   margin-left: 30px; 
+  margin-top: 70px;
 
     @include max-s(992px)  {
       margin-left: 15px; 
@@ -635,7 +642,6 @@
     }
 
   .Task__user {
-    margin-top: 114px;
 
       @include max-s(840px)  {
         margin-top: 0px;
@@ -787,7 +793,9 @@
     margin-right: 15px;
     flex: 0 0 48px;
      & img {
-      border-radius: 24px;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
     }
   }
 
@@ -795,6 +803,7 @@
     @include font600(12px,14px);
     color: #000;
     margin-bottom: 5px;
+
     a {
       @include font600(12px,14px);
       color: #000;
@@ -4627,7 +4636,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 10px;
   }
 }
+.Black-list {
+  
 
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+
+      @include max-s(576px){
+        flex-wrap: wrap;
+      }
+    
+    &:not(:first-child) {
+      padding-top: 15px;
+      border-top: 1px solid #E9E9E9;
+    }
+
+    .Task__infouser {
+      margin-bottom: 0;
+
+      @include max-s(576px)  {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}
 
 
 

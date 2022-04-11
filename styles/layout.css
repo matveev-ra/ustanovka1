@@ -319,6 +319,7 @@
   -ms-flex: 0 0 190px;
   flex: 0 0 190px;
   margin-right: 30px;
+  margin-top: 70px;
 }
 
 .Logo {
@@ -327,6 +328,12 @@
 
 .Avatar {
   margin-bottom: 15px;
+}
+
+.Avatar img {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
 }
 
 .NameUser a {
@@ -478,10 +485,7 @@
   -ms-flex: 0 0 190px;
   flex: 0 0 190px;
   margin-left: 30px;
-}
-
-.SideBarR .Task__user {
-  margin-top: 114px;
+  margin-top: 70px;
 }
 
 .SideBarR__map {
@@ -639,7 +643,9 @@
 }
 
 .Task__avatar img {
-  border-radius: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 
 .Task__nameuser {
@@ -4929,6 +4935,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 10px;
 }
 
+.Black-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.Black-list__item:not(:first-child) {
+  padding-top: 15px;
+  border-top: 1px solid #E9E9E9;
+}
+
+.Black-list__item .Task__infouser {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {
@@ -5086,6 +5116,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: start;
     margin-bottom: 10px;
     margin-right: 0px;
+    margin-top: 0;
   }
 
   .Logo {
@@ -5098,6 +5129,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex: 0 0 58px;
     margin-right: 15px;
     margin-bottom: 5px;
+  }
+
+  .Avatar img {
+    width: 58px;
+    height: 58px;
   }
 
   .NameUser a {
@@ -5245,10 +5281,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .Logo {
     display: none;
-  }
-
-  .Avatar img {
-    width: 58px;
   }
 
   .NameUser {
@@ -5610,6 +5642,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .Black-list__item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .Black-list__item .Task__infouser {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 
