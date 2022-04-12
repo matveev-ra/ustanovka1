@@ -205,9 +205,9 @@ $(document).ready(function () {
       ).on('mouseover', function() {
         $(this).attr('type', 'date') }
       )
-      .on('mouseout', function() {
-        $(this).attr('type', 'text') }
-      )
+    //   .on('mouseout', function() {
+    //     $(this).attr('type', 'text') }
+    //   )
       ;
     
     //клик по ссылке - забыли пароль
@@ -304,17 +304,15 @@ $(document).ready(function () {
  
 
     ////select - категории, выделение категории 
-    function formatState1 (state) {
+    function formatState1(state) {
 
-        if ($(state.element).hasClass('title')){
-            var $state = $( '<b>' + state.text + '</b>' );
+        if ($(state.element).hasClass('title')) {
+            var $state = $('<b>' + state.text + '</b>');
             return $state;
-        } 
-        else {
-            return  state.text ;
+        } else {
+            return state.text;
         }
-        
-      };
+    };
       
     $(".select-category").select2({
         minimumResultsForSearch: Infinity,
@@ -350,6 +348,14 @@ $(document).ready(function () {
                 $('#save_profile').attr("disabled","disabled");
             }
     });
+
+    $('#Dogovor').click(function() { 
+        if ($(this).prop( "checked" )) {
+            $('#Budzhet').attr("disabled","disabled");
+           } else {
+            $('#Budzhet').removeAttr('disabled');
+           }
+   });
 
  
 

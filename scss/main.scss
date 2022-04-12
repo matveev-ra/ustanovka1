@@ -39,6 +39,12 @@
     margin: 0 auto;
 }
 
+.p-info {
+  @include font400(14px,16px);
+  color: #222;
+}
+
+
 
 .Top {
     height: 48px;
@@ -1335,8 +1341,33 @@ footer {
     &:focus {
       border: 1px solid #797979;
     }
+    &:disabled {
+      opacity: 0.4;
+    }
    }
-  
+
+   textarea {
+     width: 100%;
+     height: 100px;
+     background: #F8F8F8;
+     border: 1px solid #CBCBCB;
+     box-sizing: border-box;
+     border-radius: 7px;
+     padding: 10px;
+     text-align: left;
+
+     &::placeholder {
+       color: #494949;
+     }
+
+     &:focus::placeholder {
+       color: transparent;
+     }
+
+     &:focus {
+       border: 1px solid #797979;
+     }
+   }
 }
 
 .Formlogin {
@@ -4266,24 +4297,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 		}
   }
 
+.FiltrExec-wrap {
+  width: calc((1120px - 100vw) - 190px);
+
+  @include max-s(768px){
+     width: 100%;
+  }
+}
+
+
 .FiltrExec {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 10px;
   margin-bottom: 30px;
-  @include max-s(768px){
-    flex-wrap: wrap;
-  }
+
+
+    @include max-s(768px){
+      flex-wrap: wrap;
+    }
 
     .Field {
-      //width: 32%;
-      //flex: 0 0 32%;
-      //max-width: 200px;
+      //display:inline-block;zoom:1;vertical-align:top;
+      width: 32%;
+      margin-right: 15px;
+      
       @include max-s(768px){
-
-        //max-width: 280px;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0px;
       }
+
+      // &:not(:first-child) {
+      //   margin-left: 20px;
+      //   @include max-s(768px){
+      //     margin-left: 0;
+          
+      //   }
+      // }
     }
     &__btn {
       @include max-s(768px){
@@ -4667,32 +4718,109 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
+.NewTask-wrap {
 
-.NewTask__item {
-  margin-bottom: 30px;
+  width: calc((1120px - 100vw) - 380px);
 
-
-  .checkbox {
-    margin: 20px 0 0 ;
+  @include max-s(768px) {
+    width: 100%;
   }
 }
- 
+
+.NewTask {
+  margin-bottom: 40px;
+  //max-width: 650px;
+
+  &__item {
+    margin-bottom: 30px;
+
+    .checkbox {
+      margin: 20px 0 0;
+    }
+  }
+
+  .Field {
+    margin-right: 0px; 
+    &:not(:last-child) {
+      margin-right: 20px; 
+      @include max-s(768px){
+        margin-right: 0; 
+      }
+    }
+
+  }
+
+  .ProfHD {
+    margin-bottom: 10px;
+  }
+
+  .Text-info {
+    margin: 20px 0;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .btn-small {
+    margin-bottom: 40px;
+  }
+}
+
+
 .Budzhet {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  
+
+  .Field {
+
+    @include max-s(525px) {
+      margin-bottom: 20px;
+    }
+  }
+
   .checkbox {
     margin-top: 10px;
-    margin-left: 4%; 
-    @include max-s(525px){
-      margin-top: 0; 
+    margin-left: 4%;
+
+    @include max-s(525px) {
+      margin-top: 0;
       margin-left: 0;
+      margin-bottom: 30px;
     }
   }
 }
 
+.Name-file {
 
+  .oFile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 15px;
+    align-items: center;
+
+    a {
+      @include font400(14px,16px);
+      color: #222;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      background: url('../images/close3-mini.svg') center top no-repeat;
+      width: 10px;
+      height: 10px; 
+      margin-left: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 
 
