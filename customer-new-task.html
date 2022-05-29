@@ -20,7 +20,7 @@
 <div class="Main">
 
   <div class="Top">
-    <div class="Top__in Cont1120" id="Topmenu">
+    <div class="Top__in" id="Topmenu">
 
       <div class="Top__namecomp"> Мелдана <span>партнер</span> </div>
       <div class="logo-mini"><a href=""><img src="images/logo-mini.svg" alt=""></a> </div>
@@ -224,6 +224,10 @@
           <div class="Field">
             <input type="text" name="name3" placeholder="Укажите адрес объекта или поставьте точку на карте" value="">
           </div>
+          <div class="NewTask__map">
+            <img src="images/img-map.png" alt="">
+          </div>
+
         </div>
 
         <div class="NewTask__item">
@@ -235,10 +239,11 @@
 
         <div class="ProfPerson__wrap">
           <div class="Field">
-            <input type="text" name="date" placeholder="Дата начала" value="" class="inputdate">
+            <input type="date"  name="date" placeholder="Дата начала" value="" class="inputdate">
+            <span></span>
           </div>
           <div class="Field">
-            <input type="text" name="date" placeholder="Дата окончания" value="" class="inputdate">
+            <input type="date" name="date" placeholder="Дата окончания" value="" class="inputdate">
           </div>
         </div>
 
@@ -269,9 +274,56 @@
             Максимальное количество файлов:<strong> 2 шт.</strong>
           </p>
         </div>
+
+        <div class="TaskM-img__Wrap NewTask-files">
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF txt"><span>txt</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF doc"><span>DOC</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF pdf"><span>pdf</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF xls"><span>xls</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF zip"><span>zip</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF rar"><span>rar</span></div>
+          </div>
+
+        </div>
+
         <button class="btn-small">Добавить файлы</button>
-
-
         
         <div class="ProfHD">Скрытые файлы</div>
         <p class="p-info">Вы можете добавить к заданию файлы, которые видны только исполнителю</p>
@@ -284,17 +336,60 @@
           </p>
         </div>
 
-        <div class="Name-file">
-          <div class="oFile"><a href="">Наименование файла.xls</a><span></span></div>
-          <div class="oFile"><a href="">Длинное Наименование файла.xls</a><span></span></div>
-          <div class="oFile"><a href="">Наименование файла.xls</a><span></span></div>
+        <div class="TaskM-img__Wrap NewTask-files">
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <a href="images/img-pasport.png" data-fancybox="gallery2"><img src="images/img-pasport.png" alt=""></a>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF txt"><span>txt</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF doc"><span>DOC</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF pdf"><span>pdf</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF xls"><span>xls</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF zip"><span>zip</span></div>
+          </div>
+          <div class="ProfScan__item">
+            <div class="close2"></div>
+            <div class="FormatF rar"><span>rar</span></div>
+          </div>
+
         </div>
         
         <button class="btn-small">Добавить файлы</button>
 
+
         <div class="NewTask__item">
           <label class="checkbox">
-            <input id="Agree" type="checkbox" name="checkbox" value="По договоренности" required="">
+            <input id="Agree" type="checkbox" name="checkbox" value="правила сервиса" required="">
             <div class="checkbox__text">Я принимаю <a href="">правила сервиса</a></div>
           </label>
         </div>
@@ -309,13 +404,7 @@
     </div>
     <!-- /Content-->
 
-    <div class="SideBarR">
-      <div class="Task__map">
-        <img src="images/map.png" alt="">
-      </div>
-      
-    </div>
-    <!-- /SideBarR-->
+    
 
   </div>
   <!-- /ContWrap-->
@@ -361,7 +450,60 @@
 </div>
 <!-- /MODAL //////////////////////////////////////////////-->
 
+<!--MODAL //////////////////  - Modal   ////////////////////-->
+<div class="ModalF ModalMenu" id="MoadalMenu" style=" display: none;">
+  <div class="close"></div>
+  <div class="Modal__body popup-menu">
 
+      <div class="Panel__item">
+        <a href="" >
+          <i class="Panel__icon "><img src="images/icon-notific.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name">Уведомления</span>
+          <span class="Panel__num-notific">12</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-task.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Мои задания</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-addtask.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Добавить задания</span>
+        </a>
+      </div>
+
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-executor.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Исполнители</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-lead.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Руководители</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-blacklist.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Черный список</span>
+        </a>
+      </div>
+      <div class="Panel__item">
+        <a href="">
+          <i class="Panel__icon "><img src="images/icon-menu-favorite.svg" alt="" class="img-svg"></i>
+          <span class="Panel__name Panel__name-task">Избранное</span>
+        </a>
+      </div>
+      
+    
+  </div>
+</div>
+<!-- /MODAL //////////////////////////////////////////////-->
 
 
 <script src="js/jquery-3.6.0.min.js"></script>

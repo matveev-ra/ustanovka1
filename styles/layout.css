@@ -53,6 +53,7 @@
 }
 
 .Top__in {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +328,7 @@
   flex: 0 0 190px;
   margin-right: 30px;
   margin-top: 70px;
+  position: relative;
 }
 
 .Logo {
@@ -5058,6 +5060,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-right: 20px;
 }
 
+.NewTask__map {
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+}
+
+.NewTask__map img {
+  width: 100%;
+  height: 200px;
+}
+
 .NewTask .ProfHD {
   margin-bottom: 10px;
 }
@@ -5126,6 +5139,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .Name-file .oFile span:hover {
   cursor: pointer;
+}
+
+.NewTask-files {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=layout.css.map */
@@ -5325,6 +5342,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .Logout {
     margin-left: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .Content {
@@ -5356,6 +5376,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .Panel__item--hidd1 {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 840px) and (max-width: 340px) {
+  .Logout {
+    top: 68px;
   }
 }
 
@@ -5453,11 +5479,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .NameUser {
-    width: 90%;
     margin-right: 0;
   }
 
   .Panel {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

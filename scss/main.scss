@@ -52,11 +52,12 @@
     display: flex;
 
     &__in {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
-          padding: 0 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
       }
       &__namecomp {
           @include font600(12px,14px);
@@ -376,19 +377,21 @@
     flex: 0 0 190px;
     margin-right: 30px; 
     margin-top: 70px;
+    position: relative;
     //border: 1px solid red;
-    @include max-s(992px)  {
-      margin-right: 15px; 
-    }
-    @include max-s(840px)  {
-      flex: 1 1 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: start;
-      margin-bottom: 10px;
-      margin-right: 0px; 
-      margin-top: 0;
-    }
+
+      @include max-s(992px)  {
+        margin-right: 15px; 
+      }
+      @include max-s(840px)  {
+        flex: 1 1 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 10px;
+        margin-right: 0px; 
+        margin-top: 0;
+      }
 }
 
 .Logo {
@@ -449,7 +452,7 @@
     margin-right: 20px;
   }
   @include max-s(768px)  {
-    width: 90%;
+    //width: 90%;
     margin-right: 0;
   }
 }
@@ -459,19 +462,18 @@
   border-bottom: 1px solid  #E9E9E9;
   margin-bottom: 20px;
 
-  @include max-s(840px)  {
-    border-bottom: none;
-    margin-bottom: 0;
-    
-  }
-  @include max-s(768px)  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-    padding-bottom: 0;
-  }
-
+      @include max-s(840px)  {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+      @include max-s(768px)  {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 0;
+      }
 
 		&__item {
       padding-bottom: 0px;
@@ -540,18 +542,15 @@
       margin-right: 8px;
     }
 
-		
-
     &__name {
       @include font400(12px,14px);
       color: #222;
       padding: 2px 5px;
       margin-right:  5px;
 
-      @include max-s(600px)  {
-        display: none;
-      }
-
+        @include max-s(600px)  {
+          display: none;
+        }
     }
     
     &__name-task {
@@ -573,19 +572,21 @@
       @include font600(12px,28px);
       color: #fff;
       text-align: center;
-      
     }
-
-
-
-		
-
 		
 }
 
 .Logout {
     @include max-s(840px){
       margin-left: 15px; 
+      position: absolute;
+      top: 0;
+      right: 0;
+
+        @include max-s(340px){
+          top: 68px;
+
+        }
     }
 
     a {
@@ -4750,6 +4751,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   }
 
+  &__map {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
   .ProfHD {
     margin-bottom: 10px;
   }
@@ -4822,7 +4832,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-
+.NewTask-files {
+  margin-bottom: 20px;
+}
 
 
 

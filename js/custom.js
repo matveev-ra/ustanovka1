@@ -186,30 +186,33 @@ $(document).ready(function () {
     });
 
    //выводит плейсхолдер у input - date
-    // $('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function() {
-    //     var el = this, type = $(el).attr('type');
-    //     if ($(el).val() == '') $(el).attr('type', 'text');
-    //     $(el).focus(function() {
-    //         $(el).attr('type', type);
-    //         el.click();
-    //     });
-    //     $(el).blur(function() {
-    //         if ($(el).val() == '') $(el).attr('type', 'text');
-    //     });
-    // });
+    $('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function() {
+        
+        var el = this, type = $(el).attr('type');
+        //меняем с date на text 
+        if ($(el).val() == '') $(el).attr('type', 'text');
 
-    $('.inputdate').on('focus', function() {
-        $(this).attr('type', 'date') }
-      ).on('blur', function() {
-        $(this).attr('type', 'date') }
-      ).on('mouseover', function() {
-        $(this).attr('type', 'date') }
-      )
-    //   .on('mouseout', function() {
-    //     $(this).attr('type', 'text') }
-    //   )
-      ;
+        //при наведении на область
+        $(this).on('mouseover', function() { 
+            if ($(el).val() == '') {
+                $(el).attr('type', 'date');
+                el.click();
+            } 
+        });
+        //при отведении за область
+        $(this).on('mouseout', function() { 
+            if ($(el).val() == '') {
+                $(el).attr('type', 'text');
+             } 
+        });
+    });
+
     
+
+
+  
+
+
     //клик по ссылке - забыли пароль
     $('.Forgot__password').click(function(e) {
         e.preventDefault();
