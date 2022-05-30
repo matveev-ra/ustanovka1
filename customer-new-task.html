@@ -139,29 +139,21 @@
       <div class="HDmain">Создание нового задания</div>
 
       <div class="NewTask">
-        <form action="" method="" class="form js-form-validate">
+        <form action="" method="" class="js-form-validate">
         <div class="NewTask__item">
           <div class="ProfHD2">Мне нужно</div>
           <div class="Field">
-            <input type="text" name="about" placeholder="Коротко сформулируйте задачу" value="" data-validate>
+            <input class="inputField" type="text" name="about" placeholder="Коротко сформулируйте задачу" value="" >
           </div>
           <label class="checkbox">
-            <input id="Agree" type="checkbox" name="checkbox" value="Согласие" required="">
+            <input id="Agree" type="checkbox" name="checkbox" value="Согласие" >
             <div class="checkbox__text">Отправить рассылку всем исполнителям в этой области</div>
           </label>
         </div>
-        <div class="Field" >
-          <select   required="">
-
-            <option selected="" disabled="" value="">Категория</option>
-            <option value="1">Сети связи</option>
-            <option value="2">Монтаж локальных сетей связи (СКС)</option>
-            <option value="3">Монтаж оптических сетей связи (ВОЛС)</option>
-           </select>
-        </div>    
+           
         <div class="FiltrExec">
           <div class="Field" >
-            <select class="select-category" style="width: 100%" required="">
+            <select class="select-category inputField" style="width: 100%" >
 
               <option selected="" disabled="" value="" >Категория</option>
               <option value="1">Сети связи</option>
@@ -188,7 +180,7 @@
             </select>
           </div>
           <div class="Field" >
-            <select class="select-category" style="width: 100%">
+            <select class="select-category inputField" style="width: 100%">
 
               <option selected="" disabled="" value="">Подкатегория</option>
               <option value="1">Сети связи</option>
@@ -213,7 +205,7 @@
             </select>
           </div>
           <div class="Field">
-            <select class="select-city" style="width: 100%">
+            <select class="select-city inputField" style="width: 100%">
               <option selected disabled value="">Город</option>
               <option value="1">Абаза</option>
               <option value="2">Абакан</option>
@@ -229,7 +221,7 @@
 
         <div class="NewTask__item">
           <div class="Field">
-            <input type="text" name="name3" placeholder="Укажите адрес объекта или поставьте точку на карте" value="">
+            <input class="inputField" type="text" name="name3" placeholder="Укажите адрес объекта или поставьте точку на карте" value="">
           </div>
           <div class="NewTask__map">
             <img src="images/img-map.png" alt="">
@@ -239,37 +231,38 @@
 
         <div class="NewTask__item">
           <div class="Field">
-            <input type="text" name="name3" placeholder="Заказчик" value="">
+            <input class="inputField" type="text" name="name3" placeholder="Заказчик" value="">
           </div>
         </div>
 
 
         <div class="ProfPerson__wrap">
           <div class="Field">
-            <input type="date"  name="date" placeholder="Дата начала" value="" class="inputdate">
+            <input class="inputField" type="date"  name="date" placeholder="Дата начала" value="" >
             <span></span>
           </div>
           <div class="Field">
-            <input type="date" name="date" placeholder="Дата окончания" value="" class="inputdate">
+            <input class="inputField" type="date" name="date" placeholder="Дата окончания" value="" >
           </div>
         </div>
 
 
         <div class="ProfPerson__wrap Budzhet">
           <div class="Field">
-            <input type="text" name="date" placeholder="Бюджет" value="" id="Budzhet">
+            <input id="Budzhet" type="text" name="" placeholder="Бюджет" value="" disabled="disabled" required>
           </div>
           <label class="checkbox">
-            <input id="Dogovor" type="checkbox" name="checkbox" value="По договоренности" required="">
+            <input id="Dogovor" type="checkbox" name="checkbox" value="По договоренности"    checked="checked" >
             <div class="checkbox__text">По договоренности</div>
           </label>
         </div>
 
         <div class="NewTask__item">
           <div class="Field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Подробно опишите детали вашего заказа"></textarea>
+            <textarea name="" class="inputField" cols="30" rows="10" placeholder="Подробно опишите детали вашего заказа"></textarea>
           </div>
         </div>
+
 
         <div class="ProfHD">Публичные файлы</div>
         <p class="p-info">Вы можете добавить к заданию файлы, которые видны всем</p>
@@ -392,17 +385,17 @@
         </div>
         
         <button class="btn-small">Добавить файлы</button>
-
+ 
 
         <div class="NewTask__item">
           <label class="checkbox">
-            <input id="Agree" type="checkbox" name="checkbox" value="правила сервиса" required="">
+            <input class="inputField" id="Agree" type="checkbox" name="checkbox" value="правила сервиса" checked="checked" required>
             <div class="checkbox__text">Я принимаю <a href="">правила сервиса</a></div>
           </label>
         </div>
 
-        <!-- disabled="disabled" -->
-        <button class="btn-form" id="save-form" >Опубликовать задание</button>
+        <!-- -->
+        <button class="btn-form " id="save-form" disabled="disabled" >Опубликовать задание</button>
       </form>
 
       </div>

@@ -2632,13 +2632,17 @@ a.btn-form:focus {
 }
 
 .btn-form[disabled],
-a.btn-form[disabled] {
+.btn-form.disabled,
+a.btn-form[disabled],
+a.btn-form.disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 .btn-form[disabled]:hover,
-a.btn-form[disabled]:hover {
+.btn-form.disabled:hover,
+a.btn-form[disabled]:hover,
+a.btn-form.disabled:hover {
   background: #23B4BC;
 }
 
@@ -5143,6 +5147,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .NewTask-files {
   margin-bottom: 20px;
+}
+
+.empty_field {
+  border: 1px solid #d8512d;
+  border-radius: 7px;
 }
 
 /*# sourceMappingURL=layout.css.map */

@@ -2474,7 +2474,7 @@ footer {
     &:focus {
       background: #0C8E95;
     }
-    &[disabled] {
+    &[disabled], &.disabled  {
       opacity: 0.5;
       cursor: not-allowed;
       &:hover {
@@ -4837,5 +4837,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-
+.empty_field {
+  border: 1px solid #d8512d;
+  border-radius: 7px;
+}
 
