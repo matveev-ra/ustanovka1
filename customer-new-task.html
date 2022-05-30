@@ -139,81 +139,88 @@
       <div class="HDmain">Создание нового задания</div>
 
       <div class="NewTask">
+        <form action="" method="" class="form js-form-validate">
         <div class="NewTask__item">
           <div class="ProfHD2">Мне нужно</div>
           <div class="Field">
-            <input type="text" name="about" placeholder="Коротко сформулируйте задачу" value="">
+            <input type="text" name="about" placeholder="Коротко сформулируйте задачу" value="" data-validate>
           </div>
           <label class="checkbox">
             <input id="Agree" type="checkbox" name="checkbox" value="Согласие" required="">
             <div class="checkbox__text">Отправить рассылку всем исполнителям в этой области</div>
           </label>
         </div>
+        <div class="Field" >
+          <select   required="">
 
+            <option selected="" disabled="" value="">Категория</option>
+            <option value="1">Сети связи</option>
+            <option value="2">Монтаж локальных сетей связи (СКС)</option>
+            <option value="3">Монтаж оптических сетей связи (ВОЛС)</option>
+           </select>
+        </div>    
         <div class="FiltrExec">
           <div class="Field" >
-            <select class="select-category" style="width: 100%">
+            <select class="select-category" style="width: 100%" required="">
 
-              <option selected="" disabled="">Категория</option>
-              <option value="">Сети связи</option>
-              <option value="">Монтаж локальных сетей связи (СКС)</option>
-              <option value="">Монтаж оптических сетей связи (ВОЛС)</option>
-              <option value="">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
+              <option selected="" disabled="" value="" >Категория</option>
+              <option value="1">Сети связи</option>
+              <option value="2">Монтаж локальных сетей связи (СКС)</option>
+              <option value="3">Монтаж оптических сетей связи (ВОЛС)</option>
+              <option value="4">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
                 станции Сотовой связи</option>
-              <option value="">Поставка и настройка IP-PBX</option>
-              <option value="">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
-              <option value="">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
-              <option value="">Установка спутникового TV Триколор</option>
+              <option value="5">Поставка и настройка IP-PBX</option>
+              <option value="6">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
+              <option value="7">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
+              <option value="8">Установка спутникового TV Триколор</option>
 
 
-              <option value="">Репитеры и интернет</option>
-              <option value="">Монтаж локальных сетей связи (СКС)</option>
-              <option value="">Монтаж оптических сетей связи (ВОЛС)</option>
-              <option value="">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
+              <option value="9">Репитеры и интернет</option>
+              <option value="10">Монтаж локальных сетей связи (СКС)</option>
+              <option value="11">Монтаж оптических сетей связи (ВОЛС)</option>
+              <option value="12">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
                 станции Сотовой связи</option>
-              <option value="">Поставка и настройка IP-PBX</option>
-              <option value="">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
-              <option value="">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
-              <option value="">Установка спутникового TV Триколор</option>
+              <option value="13">Поставка и настройка IP-PBX</option>
+              <option value="14">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
+              <option value="15">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
+              <option value="16">Установка спутникового TV Триколор</option>
 
             </select>
           </div>
           <div class="Field" >
             <select class="select-category" style="width: 100%">
 
-              <option selected="" disabled="">Подкатегория</option>
-              <option value="">Сети связи</option>
-              <option value="">Монтаж локальных сетей связи (СКС)</option>
-              <option value="">Монтаж оптических сетей связи (ВОЛС)</option>
-              <option value="">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
+              <option selected="" disabled="" value="">Подкатегория</option>
+              <option value="1">Сети связи</option>
+              <option value="2">Монтаж локальных сетей связи (СКС)</option>
+              <option value="3">Монтаж оптических сетей связи (ВОЛС)</option>
+              <option value="4">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
                 станции Сотовой связи</option>
-              <option value="">Поставка и настройка IP-PBX</option>
-              <option value="">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
-              <option value="">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
-              <option value="">Установка спутникового TV Триколор</option>
-
-
-              <option value="">Репитеры и интернет</option>
-              <option value="">Монтаж локальных сетей связи (СКС)</option>
-              <option value="">Монтаж оптических сетей связи (ВОЛС)</option>
-              <option value="">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
+              <option value="5">Поставка и настройка IP-PBX</option>
+              <option value="6">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
+              <option value="7">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
+              <option value="8">Установка спутникового TV Триколор</option>
+              <option value="9">Репитеры и интернет</option>
+              <option value="10">Монтаж локальных сетей связи (СКС)</option>
+              <option value="11">Монтаж оптических сетей связи (ВОЛС)</option>
+              <option value="12">Монтажные работы на объектах с применение пром. альпинизма Радио-релейные линии, Базовые
                 станции Сотовой связи</option>
-              <option value="">Поставка и настройка IP-PBX</option>
-              <option value="">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
-              <option value="">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
-              <option value="">Установка спутникового TV Триколор</option>
+              <option value="13">Поставка и настройка IP-PBX</option>
+              <option value="14">Проектирование ОПС/СКС/ВОЛС/Электромонтаж</option>
+              <option value="15">Установка IP-телефонии АТС/PBX, IP и аналоговой, настройка</option>
+              <option value="16">Установка спутникового TV Триколор</option>
 
             </select>
           </div>
           <div class="Field">
             <select class="select-city" style="width: 100%">
-              <option selected disabled>Город</option>
-              <option>Абаза</option>
-              <option>Абакан</option>
-              <option>Абдулино</option>
-              <option>Абинск</option>
-              <option>Агидель</option>
-              <option>Агрыз</option>
+              <option selected disabled value="">Город</option>
+              <option value="1">Абаза</option>
+              <option value="2">Абакан</option>
+              <option value="3">Абдулино</option>
+              <option value="4">Абинск</option>
+              <option value="5">Агидель</option>
+              <option value="6">Агрыз</option>
             </select>
           </div>
 
@@ -394,8 +401,9 @@
           </label>
         </div>
 
-
-        <button class="btn-form" disabled="disabled">Опубликовать задание</button>
+        <!-- disabled="disabled" -->
+        <button class="btn-form" id="save-form" >Опубликовать задание</button>
+      </form>
 
       </div>
       <!-- /NewTasck -->

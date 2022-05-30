@@ -633,18 +633,176 @@ $(".delete-js").click(function(e){
 
 
 //активировать кнопку после заполнения всех полей 
-var inputs = [].slice.call(document.querySelectorAll('input[type="text"]')),
-button = document.querySelector('button#btn-person');
+// var inputs = [].slice.call(document.querySelectorAll('input[type="text"]')),
+// button = document.querySelector('button#btn-person');
 
-inputs.forEach(function(el){
-  el.addEventListener('input', checkInputs, false);
+// inputs.forEach(function(el){
+//   el.addEventListener('input', checkInputs, false);
+// });
+
+// function checkInputs(){
+// 	var empty = inputs.filter(function(e){
+//     return e.value.trim() === '';
+//   }).length;
+//   button.disabled = empty !== 0;
+// }
+// checkInputs();
+////////////////////
+
+
+$('.js-form-validate__').submit(function () {
+    var form = $(this);
+    var field = [];
+    form.find('input[data-validate]').each(function () {
+      field.push('input[data-validate]');
+      var value = $(this).val(),
+          line = $(this).closest('.some-form__line');
+      for(var i=0;i<field.length;i++) {
+        if( !value ) {
+          line.addClass('some-form__line-required');
+          setTimeout(function() {
+            line.removeClass('some-form__line-required')
+          }.bind(this),2000);
+          e.preventDefault();
+        }
+      }
+    });
+  });
+
+  $('#save-form__').click(function(e) { 
+    var input = $('input');
+    var select = $('select option:first')
+
+    if(input.val() && select == 0) {
+        console.log('поле заполненно');
+
+     } else {
+        console.log('поле не заполненно');
+        $('.Field').css('border', '1px solid #d8512d');
+        
+    }
 });
 
-function checkInputs(){
-	var empty = inputs.filter(function(el){
-    return el.value.trim() === '';
-  }).length;
-  button.disabled = empty !== 0;
+
+$(document).ready(function () {
+
+
+
+
+
+    $(function() {
+    
+      $('.js-form-validate__').each(function(){
+        // Объявляем переменные (форма и кнопка отправки)
+        var form = $(this),
+            btn = form.find('#save-form');
+    
+        // Добавляем каждому проверяемому полю, указание что поле пустое
+        //form.find('.Field').addClass('empty_field');
+    
+        // Функция проверки полей формы
+        function checkInput(){
+            form.find('input').each(function(){
+                var input = $('input');
+                var select = $('.Field select');
+                var textarea = $('.Field textarea');
+
+              if($(this).val()){
+                // Если поле не пустое удаляем класс-указание
+                $(this).parent().removeClass('empty_field');
+              } else {
+                // Если поле пустое добавляем класс-указание
+                $(this).parent().addClass('empty_field');
+              }
+            });
+          }
+          function checkSelect(){
+            form.find('select').each(function(){
+
+              if($(this).val()){
+                // Если поле не пустое удаляем класс-указание
+                $(this).parent().removeClass('empty_field');
+              } else {
+                // Если поле пустое добавляем класс-указание
+                $(this).parent().addClass('empty_field');
+              }
+            });
+          }
+    
+        // Функция подсветки незаполненных полей
+        function lightEmpty(){
+          form.find('.empty_field').css('border', '1px solid #d8512d');
+          //Через полсекунды удаляем подсветку
+        //   setTimeout(function(){
+        //     form.find('.empty_field').removeAttr('style');
+        //   },2000);
+        }
+    
+        //Проверка в режиме реального времени
+        setInterval(function(){
+          // Запускаем функцию проверки полей на заполненность
+          checkInput();
+          checkSelect();
+          // Считаем к-во незаполненных полей
+          var sizeEmpty = form.find('.empty_field').length;
+          // Вешаем условие-тригер на кнопку отправки формы
+          if(sizeEmpty > 0){
+            if(btn.hasClass('disabled')){
+              return false
+            } else {
+              btn.addClass('disabled')
+            }
+          } else {
+            btn.removeClass('disabled')
+          }
+        },1500);
+    
+        // Событие клика по кнопке отправить
+        btn.click(function(){
+          if($(this).hasClass('disabled')){
+            // подсвечиваем незаполненные поля и форму не отправляем, если есть незаполненные поля
+            lightEmpty();
+            return false
+          } else {
+            // Все хорошо, все заполнено, отправляем форму
+            form.submit();
+          }
+        });
+      });
+    });
+    
+});
+
+function validate_form ( )
+{
+	valid = true;
+
+        if ( document.contact_form.contact_name.value == "" )
+        {
+                alert ( "Пожалуйста, введите данные в поле 'Ваше имя'." );
+                valid = false;
+        }
+
+        if ( ( document.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
+        {
+                alert ( "Пожалуйста, выберите Ваш пол: Мужской или Женский" );
+                valid = false;
+        }
+
+        if ( document.contact_form.age.selectedIndex == 0 )
+        {
+                alert ( "Пожалуйста, выберите Ваш возраст." );
+                valid = false;
+        }
+
+        if ( document.contact_form.terms.checked == false )
+        {
+                alert ( "Пожалуйста, отметь согласие с Соглашением." );
+                valid = false;
+        }
+
+
+
+        return valid;
 }
-checkInputs();
-////////////////////
+
