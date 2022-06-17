@@ -361,7 +361,7 @@
 
 .Panel {
   padding-bottom: 20px;
-  border-bottom: 1px solid  #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
   margin-bottom: 20px;
 }
 
@@ -499,6 +499,19 @@
 
 .SideBarR__map {
   width: 100%;
+  text-align: center;
+}
+
+.SideBarR__info {
+  background: #E4F8E6;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.SideBarR__info span {
+  display: block;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -2742,7 +2755,8 @@ a.btn-form.red:focus {
   background: #AF0909;
 }
 
-.btn-small {
+.btn-small,
+a.btn-small {
   font-weight: 600;
   font-size: 12px;
   line-height: 14px;
@@ -2760,35 +2774,45 @@ a.btn-form.red:focus {
   -ms-flex-align: center;
   align-items: center;
   border: none;
+  text-decoration: none;
+  text-align: center;
 }
 
-.btn-small:hover {
+.btn-small:hover,
+a.btn-small:hover {
   cursor: pointer;
   background: #3FD2DA;
 }
 
-.btn-small:active {
+.btn-small:active,
+a.btn-small:active {
   background: #0C8E95;
 }
 
-.btn-small:focus {
+.btn-small:focus,
+a.btn-small:focus {
   background: #0C8E95;
 }
 
-.btn-small.black {
+.btn-small.black,
+a.btn-small.black {
+  color: #fff;
   background: #565656;
 }
 
-.btn-small.black:hover {
+.btn-small.black:hover,
+a.btn-small.black:hover {
   cursor: pointer;
   background: #8B8B8B;
 }
 
-.btn-small.black:active {
+.btn-small.black:active,
+a.btn-small.black:active {
   background: #2C2C2C;
 }
 
-.btn-small.black:focus {
+.btn-small.black:focus,
+a.btn-small.black:focus {
   background: #2C2C2C;
 }
 
@@ -5184,6 +5208,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-decoration: underline;
 }
 
+.Task-empty a:hover {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {
@@ -6042,7 +6070,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .ListTab__tab {
     border: 1px solid #EBEBEB;
-    border-radius: 0px  !important;
+    border-radius: 0px !important;
   }
 
   .ListTab__body {
@@ -6060,7 +6088,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .ProfTab__tab {
     border: 1px solid #EBEBEB;
-    border-radius: 0px  !important;
+    border-radius: 0px !important;
   }
 
   .ProfTab__body {
