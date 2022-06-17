@@ -2519,6 +2519,7 @@ footer {
       background: #afaeae;
     }
   }
+
   &.grey2  {
     background: #F8F8F8;
     border: 1px solid #CBCBCB;
@@ -2540,6 +2541,7 @@ footer {
       background: #EDEDED;
     }
   }
+
   &.red  {
     background: #E72424;
     color: #fff;
@@ -4842,3 +4844,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 7px;
 }
 
+.Task-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  .btn-form {
+    margin-right: 20px;
+  }
+
+}
+
+.Task-empty {
+  background: #E4F8E6;
+  border-radius: 7px;
+  @include font600(12px,18px);
+  color: #494949;
+  padding: 20px;
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      
+    }
+  }
+
+}

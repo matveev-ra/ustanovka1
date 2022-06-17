@@ -5154,6 +5154,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 7px;
 }
 
+.Task-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.Task-btn .btn-form {
+  margin-right: 20px;
+}
+
+.Task-empty {
+  background: #E4F8E6;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #494949;
+  padding: 20px;
+}
+
+.Task-empty a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=layout.css.map */
 
 @media all and (min-width: 511px) {
