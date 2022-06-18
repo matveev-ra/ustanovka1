@@ -2806,10 +2806,11 @@ a.btn-form {
    height: 28px;
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
    align-items: center;
    border: none;
    text-decoration: none;
-   text-align: center;
+
 
    &:hover {
       cursor: pointer;
@@ -5281,6 +5282,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
    .btn-form {
       margin-right: 20px;
+      margin-bottom: 20px;
    }
 
 }

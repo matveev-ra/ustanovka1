@@ -2770,12 +2770,14 @@ a.btn-small {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: none;
   text-decoration: none;
-  text-align: center;
 }
 
 .btn-small:hover,
@@ -5191,6 +5193,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .Task-btn .btn-form {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .Task-empty {
