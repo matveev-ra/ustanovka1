@@ -4541,6 +4541,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-bottom: 20px;
   border-bottom: 1px solid #E9E9E9;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .Executor:last-child {
@@ -4590,16 +4591,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .Executor__info2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .Executor__favorit {
@@ -5189,6 +5183,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
+  margin-top: 20px;
 }
 
 .Task-btn .btn-form {
@@ -5911,8 +5906,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .Executor__info2 {
+    position: static;
     width: 100%;
     margin-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .Executor__favorit {

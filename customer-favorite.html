@@ -3,7 +3,7 @@
 <html lang="ru">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Задача</title>
+	<title>Черный список</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="Keywords" content=""/>
 	<meta name="Description" content=""/>
@@ -11,8 +11,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/layout.css" type="text/css"/>
-  <link rel="stylesheet" href="styles/select2.css" type="text/css"/>
-  <link rel="stylesheet" href="styles/jquery.fancybox.css" type="text/css"/>
+	<link rel="stylesheet" href="styles/select2.css" type="text/css"/>
 
 
 <body>
@@ -63,7 +62,7 @@
   </div>
   <!-- /Top-->
 
-  <div class="ContWrap Cont1120">
+  <div class="ContWrap Cont900">
     <div class="SideBar">
       <div class="Avatar"><a href=""><img src="images/img-avatar.jpg" alt=""></a> </div>
       <div class="NameUser">
@@ -89,7 +88,7 @@
           </a>
         </div>
         <div class="Panel__item Panel__item--hidd2">
-          <a href="" class="active">
+          <a href="">
             <i class="Panel__icon "><img src="images/icon-menu-addtask.svg" alt="" class="img-svg"></i>
             <span class="Panel__name Panel__name-task">Добавить задания</span>
           </a>
@@ -117,7 +116,7 @@
           </a>
         </div>
         <div class="Panel__item Panel__item--hidd1">
-          <a href="">
+          <a href="" class="active">
             <i class="Panel__icon "><img src="images/icon-menu-favorite.svg" alt="" class="img-svg"></i>
             <span class="Panel__name Panel__name-task">Избранное</span>
           </a>
@@ -137,166 +136,60 @@
     <!-- /SideBar-->
     
     <div class="Content">
-      <!-- <div class="BreadCrambs">
-        <a href="">Сети связи</a>  /  <a href="">Монтаж локальных сетей связи (СКС)</a>  /  <span>Название задачи</span>
-      </div> -->
+      <div class="HDmain">Избранное</div>
 
-      <div class="HDmain">Название задачи</div>
-
-      <div class="TaskM__wrap">
-        
-        <div class="TaskM">
-          <div class="TaskM__top">
-            <div class="Media__item open">
-              <i class="Media__icon"></i>
-              <span>Открыто</span>
+      <div class="Black-list">
+        <div class="Black-list__item">
+          <div class="Task__infouser">
+            <div class="Task__avatar">
+              <img src="images/img-avatar.jpg" alt="">
+              <div class="off online"></div>
             </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-time"></i>
-              <span >1 день назад</span>
-            </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-map"></i>
-              <span>Екатеренбург</span>
-            </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-message"></i>
-              <span>1 отлик</span>
-            </div>
-            <div class="Media__item">
-              <i class="Media__icon icon-see"></i>
-              <span>12</span>
+            <div class="Task__user-in">
+              <div class="Task__nameuser">Олег Константинович</div>
             </div>
           </div>
-          <!--TaskM__top -->
-
-          <div class="TaskM__body">
-            <div class="TaskM__budget">
-              800 ₽
-              <span>Бюджет</span>
-            </div>
-            <div class="TaskM__time">Начать задание: <span>18.10.2021 04:00</span> </div>
-            <div class="TaskM__desc">
-              <div class="HD">Описание проекта:</div>
-              <div class="Text">
-                Автоматизированная проходная Ростов-Дон АП Т9М1 STEP2 (FlyA3EH) - шт. ББП-30 PRO Источник вторичного электропитания резервированный 12В 3А - 1 шт Ограждение - 3 столба ПО - Эра новых технологий На схеме поменять ... 
-              </div>
-            </div>
-
-            <div class="TaskM-img">
-              <div class="TaskM-img__Hd">Прикрепленные файлы:</div>
-              <div class="TaskM-img__Wrap">
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-
-                <div class="TaskM-img__item ">
-                  <div class="FormatF txt"><span>txt</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF doc"><span>DOC</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF pdf"><span>pdf</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF xls"><span>xls</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF zip"><span>zip</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF rar"><span>rar</span></div>
-                </div>
-                
-              </div>
-              <div class="TaskM-img__Hd">Скрытые файлы <span>для исполнителя</span></div>
-              <div class="TaskM-img__Wrap">
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery1"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery1"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery1"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery1"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item">
-                  <a href="images/img-pasport.png" data-fancybox="gallery1"><img src="images/img-pasport.png" alt=""></a>
-                </div>
-                <div class="TaskM-img__item ">
-                  <div class="FormatF txt"><span>txt</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF doc"><span>DOC</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF pdf"><span>pdf</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF xls"><span>xls</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF zip"><span>zip</span></div>
-                </div>
-                <div class="TaskM-img__item">
-                  <div class="FormatF rar"><span>rar</span></div>
-                </div>
-              </div>
-            </div>
-            <!-- /TaskM-img-->
-
-            <div class="Task-btn">
-              <button class="btn-form">Закрыть заявку</button>
-              <button class="btn-form grey2">Редактировать задание</button>
-            </div>
-
-          </div>
-        </div> 
-        <!-- /TaskM-->
-
-        <div class="TaskM__HD">Предложения к заданию</div>
-
-        <div class="Task-empty">
-                Список предложений пуст, или вы перенесли исполнителей в <a href="">кандидаты</a> или <a href="">отказали</a>
+          <button class="btn-small">Удалить</button>
         </div>
-
-        
-
-
-
+        <div class="Black-list__item">
+          <div class="Task__infouser">
+            <div class="Task__avatar">
+              <img src="images/img-avatar.jpg" alt="">
+              <div class="off online"></div>
+            </div>
+            <div class="Task__user-in">
+              <div class="Task__nameuser">Олег Константинович</div>
+            </div>
+          </div>
+          <button class="btn-small">Удалить</button>
+        </div>
+        <div class="Black-list__item">
+          <div class="Task__infouser">
+            <div class="Task__avatar">
+              <img src="images/img-avatar.jpg" alt="">
+              <div class="off online"></div>
+            </div>
+            <div class="Task__user-in">
+              <div class="Task__nameuser">Олег Константинович</div>
+            </div>
+          </div>
+          <button class="btn-small">Удалить</button>
+        </div>
+        <div class="Black-list__item">
+          <div class="Task__infouser">
+            <div class="Task__avatar">
+              <img src="images/img-avatar.jpg" alt="">
+              <div class="off online"></div>
+            </div>
+            <div class="Task__user-in">
+              <div class="Task__nameuser">Олег Константинович</div>
+            </div>
+          </div>
+          <button class="btn-small">Удалить</button>
+        </div>
       </div>
     </div>
-    <!-- /Content-->
-
-    <div class="SideBarR">
-      <div class="SideBarR__info">
-        <span>Исполнитель не выбран</span>
-
-        <a href="" class="btn-small black"> Все предложения</a>  
-      </div>
-
-      <div class="Task__map">
-        <img src="images/map.png" alt="">
-      </div>
-      
-    </div>
-    <!-- /SideBarR-->
+    <!-- /cont-->
 
   </div>
   <!-- /ContWrap-->
@@ -327,21 +220,6 @@
 </div>
 
 
-<!--MODAL //////////////////  - форма  ////////////////////-->
-<div class="ModalF " id="ModalAddOffer" style=" display: none;">
-  <div class="close"></div>
-
-  <div class="Modal__body">
-    <div class="Modal__hd">Добавить предложениек заданию</div>
-    <div class="TextArea">
-      <textarea  name="" id=""></textarea>
-    </div>
-  </div>
-  <button type="submit" value="" name="submit" id="submit" class="btn-footform">Отправить заявку</button>
-
-</div>
-<!-- /MODAL //////////////////////////////////////////////-->
-
 <!--MODAL //////////////////  - Modal   ////////////////////-->
 <div class="ModalF ModalMenu" id="MoadalMenu" style=" display: none;">
   <div class="close"></div>
@@ -361,7 +239,7 @@
         </a>
       </div>
       <div class="Panel__item">
-        <a href="" class="active">
+        <a href="">
           <i class="Panel__icon "><img src="images/icon-menu-addtask.svg" alt="" class="img-svg"></i>
           <span class="Panel__name Panel__name-task">Добавить задания</span>
         </a>
@@ -386,7 +264,7 @@
         </a>
       </div>
       <div class="Panel__item">
-        <a href="">
+        <a href=""  class="active">
           <i class="Panel__icon "><img src="images/icon-menu-favorite.svg" alt="" class="img-svg"></i>
           <span class="Panel__name Panel__name-task">Избранное</span>
         </a>
@@ -398,11 +276,12 @@
 <!-- /MODAL //////////////////////////////////////////////-->
 
 
+
+
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.bpopup.js"></script> 
 <script src="js/jquery.maskedinput.js"></script> 
 <script src="js/select2.js"></script>
-<script src="js/jquery.fancybox.js"></script>
 <script src="js/custom.js"></script>
 
 
